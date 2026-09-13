@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automotive Tape Competitor Reference — 3M · tesa · Nitto</title>
+<meta name="description" content="Construction, properties, performance and applications of 18 automotive tapes from 3M, tesa and Nitto, compiled from manufacturer TDS for sales training.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F5F7F4; --panel:#FFFFFF; --ink:#16231C; --ink-2:#4A5A51; --ink-3:#7A877F;
+  --rule:#D9E0DA; --rule-2:#C4CEC6; --green:#1E6B3A; --green-ink:#174F2C; --green-soft:#E4EFE7; --amber:#EBB84A;
+  --warn:#B85C1A; --warn-soft:#FBEBDD;
+  --c-3m:#B10E2A; --c-tesa:#0B4DA2; --c-nitto:#0E6F6A;
+  --fs-0:.8125rem; --fs-1:1rem; --fs-2:1.1875rem; --fs-3:1.5rem; --fs-4:1.9375rem; --fs-5:2.5rem;
+  --maxw:1120px; --radius:6px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Inter","Helvetica Neue",system-ui,-apple-system,sans-serif;font-size:var(--fs-1);line-height:1.65;font-variant-numeric:tabular-nums}
+a{color:var(--green-ink)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+h1,h2,h3,h4{line-height:1.22;margin:0}
+p{margin:0}
+ul{margin:0;padding-left:1.1em}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.site-head{padding:40px 0 24px;border-bottom:1px solid var(--rule)}
+.site-head h1{font-size:clamp(1.75rem,4.2vw,var(--fs-5));font-weight:700;letter-spacing:-.02em;max-width:24ch}
+.site-head .sub{margin-top:12px;color:var(--ink-2);max-width:66ch;font-size:var(--fs-2)}
+.meta{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
+.chip,.tag{display:inline-block;padding:2px 10px;border-radius:999px;font-size:var(--fs-0);line-height:1.6;background:var(--green-soft);color:var(--green-ink)}
+.tag{background:#EEF1EE;color:var(--ink-2)}
+.tag-cat{background:var(--green-soft);color:var(--green-ink)}
+.tag-warn{background:var(--warn-soft);color:var(--warn)}
+.bar{position:sticky;top:0;z-index:20;background:rgba(245,247,244,.94);backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid var(--rule)}
+.bar .wrap{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;padding-top:10px;padding-bottom:10px}
+.bar nav{display:flex;gap:14px;flex-wrap:wrap;font-size:var(--fs-0)}
+.bar nav a{text-decoration:none;color:var(--ink-2);padding:4px 0;border-bottom:2px solid transparent}
+.bar nav a:hover{color:var(--ink);border-bottom-color:var(--green)}
+.filters{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-left:auto}
+.fbtn{border:1px solid var(--rule-2);background:var(--panel);color:var(--ink-2);border-radius:999px;padding:3px 11px;font:inherit;font-size:var(--fs-0);cursor:pointer;line-height:1.6}
+.fbtn[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.fbtn.b-3m[aria-pressed="true"]{background:var(--c-3m);border-color:var(--c-3m)}
+.fbtn.b-tesa[aria-pressed="true"]{background:var(--c-tesa);border-color:var(--c-tesa)}
+.fbtn.b-nitto[aria-pressed="true"]{background:var(--c-nitto);border-color:var(--c-nitto)}
+.search{border:1px solid var(--rule-2);border-radius:999px;padding:4px 12px;font:inherit;font-size:var(--fs-0);min-width:170px;background:var(--panel);color:var(--ink)}
+.count{font-size:var(--fs-0);color:var(--ink-3);white-space:nowrap}
+section.sec{padding:44px 0 8px;scroll-margin-top:120px}
+.cat-title,.entry,.pend{scroll-margin-top:120px}
+section.sec>.wrap>h2{font-size:var(--fs-4);font-weight:700;letter-spacing:-.015em}
+section.sec>.wrap>.lead{margin-top:10px;color:var(--ink-2);max-width:70ch}
+.hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:28px;align-items:start;margin-top:22px}
+.hero .cs-big{width:100%;height:auto;background:var(--panel);border:1px solid var(--rule);border-radius:var(--radius);padding:10px}
+.cs-label{font-size:11px;fill:var(--ink-2)}
+.cs-big .cs-label{font-size:13px;font-weight:500}
+.howto{display:grid;gap:14px}
+.howto div{padding:14px 16px;border-left:3px solid var(--green);background:var(--panel)}
+.howto strong{display:block;font-size:var(--fs-2);margin-bottom:4px}
+.howto p{color:var(--ink-2);font-size:var(--fs-0)}
+.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:26px}
+.legend-item{display:grid;gap:8px;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--rule);border-radius:var(--radius);padding:12px}
+.legend-item:hover{border-color:var(--green)}
+.legend-item .cs{width:100%;height:auto}
+.legend-item p{font-size:var(--fs-0);color:var(--ink-2)}
+.legend-item .codes{color:var(--ink-3);margin-top:4px}
+.cnt{display:inline-block;min-width:1.6em;padding:0 .4em;border-radius:999px;background:var(--green-soft);color:var(--green-ink);font-size:.75em;text-align:center;vertical-align:middle;font-weight:600}
+.cat-group{margin-top:30px;padding-top:18px;border-top:2px solid var(--ink)}
+.cat-title{font-size:var(--fs-3);font-weight:700}
+.cat-desc{color:var(--ink-2);margin-top:6px;max-width:70ch}
+.entry{margin-top:22px;background:var(--panel);border:1px solid var(--rule);border-radius:var(--radius);overflow:hidden}
+.entry-head{padding:18px 20px 14px;border-bottom:1px solid var(--rule)}
+.entry-id{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.entry-id h3{font-size:var(--fs-3);font-weight:700;letter-spacing:-.01em}
+.brand{font-weight:700;font-size:var(--fs-0);letter-spacing:.02em;padding:1px 9px;border-radius:4px;color:#fff}
+.brand.b-3m{background:var(--c-3m)} .brand.b-tesa{background:var(--c-tesa)} .brand.b-nitto{background:var(--c-nitto)}
+.thick{font-size:var(--fs-0);color:var(--ink-3);padding-left:6px;border-left:1px solid var(--rule-2)}
+.fullname{color:var(--ink-3);font-size:var(--fs-0);margin-top:4px}
+.tagline{margin-top:6px;font-size:var(--fs-2);font-weight:500;max-width:66ch}
+.tags{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+.entry-body{display:grid;grid-template-columns:280px minmax(0,1fr) minmax(0,1fr);grid-template-areas:"cs spec perf" "cs apps perf" "src src src";gap:0}
+.cs-wrap{grid-area:cs;margin:0;padding:16px;border-right:1px solid var(--rule);background:#FBFCFA}
+.cs-wrap .cs{width:100%;height:auto}
+.cs-wrap figcaption{font-size:var(--fs-0);color:var(--ink-3);margin-top:8px}
+.blk{padding:16px 20px}
+.blk h4{font-size:var(--fs-0);font-weight:700;color:var(--green-ink);margin-bottom:8px;letter-spacing:.01em}
+.blk-spec{grid-area:spec;border-right:1px solid var(--rule)}
+.blk-perf{grid-area:perf}
+.blk-apps{grid-area:apps;border-right:1px solid var(--rule);border-top:1px solid var(--rule)}
+.blk-src{grid-area:src;border-top:1px solid var(--rule);background:#FBFCFA;font-size:var(--fs-0)}
+.blk-src ul{list-style:none;padding:0}
+dl{margin:0}
+.kv{display:grid;grid-template-columns:8em minmax(0,1fr);gap:8px;padding:5px 0;border-bottom:1px dashed var(--rule);font-size:var(--fs-0)}
+.kv:last-child{border-bottom:0}
+.kv dt{color:var(--ink-3)} .kv dd{margin:0}
+table{border-collapse:collapse;width:100%;font-size:var(--fs-0)}
+th,td{text-align:left;vertical-align:top;padding:6px 8px;border-bottom:1px solid var(--rule)}
+thead th{color:var(--ink-3);font-weight:500;border-bottom:1px solid var(--rule-2)}
+.perf th[scope=row]{font-weight:500;color:var(--ink-2);width:30%}
+.perf td:nth-child(2){min-width:11em}
+.perf td.cond{color:var(--ink-3);width:30%}
+.feat{margin-top:12px;font-size:var(--fs-0);display:grid;gap:4px}
+.apps{font-size:var(--fs-0);display:grid;gap:4px}
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.entry.is-hidden,.cat-group.is-hidden{display:none}
+.cmp th,.cmp td{white-space:nowrap}
+.cmp td:nth-child(4),.cmp td:nth-child(8){white-space:normal;min-width:18ch}
+.note{margin-top:14px;padding:12px 16px;background:var(--green-soft);color:var(--green-ink);font-size:var(--fs-0);border-radius:var(--radius);max-width:88ch}
+.src td:first-child{white-space:nowrap;color:var(--ink-2)}
+.src td:nth-child(2){white-space:nowrap;color:var(--ink-2)}
+.units{margin-top:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;font-size:var(--fs-0);color:var(--ink-2)}
+.units div{background:var(--panel);border:1px solid var(--rule);border-radius:var(--radius);padding:12px 14px}
+.units strong{color:var(--ink);display:block;margin-bottom:4px}
+footer.site-foot{margin-top:48px;padding:28px 0 60px;border-top:1px solid var(--rule);color:var(--ink-3);font-size:var(--fs-0)}
+footer.site-foot p+p{margin-top:6px}
+@media (prefers-reduced-motion:no-preference){
+  .cs-big rect,.cs-big line,.cs-big text{animation:layer-in .6s cubic-bezier(.2,.7,.2,1) both}
+  .cs-big rect:nth-of-type(1),.cs-big text:nth-of-type(1),.cs-big line:nth-of-type(1){animation-delay:.05s}
+  .cs-big rect:nth-of-type(2),.cs-big text:nth-of-type(2),.cs-big line:nth-of-type(2){animation-delay:.2s}
+  .cs-big rect:nth-of-type(3),.cs-big text:nth-of-type(3),.cs-big line:nth-of-type(3){animation-delay:.35s}
+  .cs-big rect:nth-of-type(4),.cs-big text:nth-of-type(4),.cs-big line:nth-of-type(4){animation-delay:.5s}
+  @keyframes layer-in{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+}
+@media (max-width:900px){
+  .bar nav{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;width:100%;scrollbar-width:none}
+  .bar nav::-webkit-scrollbar{display:none}
+  .filters{flex-wrap:nowrap;overflow-x:auto;width:100%;padding-bottom:2px;scrollbar-width:none;margin-left:0}
+  .filters::-webkit-scrollbar{display:none}
+  .fbtn{white-space:nowrap;flex:0 0 auto}
+  .search{flex:0 0 auto;min-width:160px;order:-1}
+  .hero{grid-template-columns:1fr}
+  .entry-body{grid-template-columns:1fr;grid-template-areas:"cs" "spec" "perf" "apps" "src"}
+  .cs-wrap,.blk-spec,.blk-apps{border-right:0}
+  .blk-perf{border-top:1px solid var(--rule)}
+}
+@media (max-width:560px){
+  .wrap{padding:0 14px}
+  .site-head{padding:28px 0 18px}
+  .entry-head,.blk{padding:14px}
+  .cs-wrap{padding:14px}
+  .kv{grid-template-columns:6.5em minmax(0,1fr)}
+  .perf th[scope=row]{width:38%}
+}
+@media print{.bar{position:static}.entry{break-inside:avoid}}
+.langtoggle{margin-top:14px;display:inline-flex;border:1px solid var(--rule-2);border-radius:999px;overflow:hidden;font-size:var(--fs-0)}
+.langtoggle a{padding:4px 14px;text-decoration:none;color:var(--ink-2);background:var(--panel);line-height:1.7}
+.langtoggle a[aria-current="true"]{background:var(--ink);color:#fff}
+.langtoggle a+a{border-left:1px solid var(--rule-2)}
+
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<pattern id="p-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#B9A77E" stroke-width="0.8"/></pattern>
+<pattern id="p-fiber" width="14" height="8" patternUnits="userSpaceOnUse"><path d="M0 4 q3 -3 7 0 t7 0" fill="none" stroke="#5F7565" stroke-width="0.7"/><path d="M2 7 q3 -2 6 0" fill="none" stroke="#5F7565" stroke-width="0.6"/></pattern>
+<pattern id="p-fiber_l" width="14" height="8" patternUnits="userSpaceOnUse"><path d="M0 4 q3 -3 7 0 t7 0" fill="none" stroke="#8C949B" stroke-width="0.7"/><path d="M2 7 q3 -2 6 0" fill="none" stroke="#8C949B" stroke-width="0.6"/></pattern>
+<pattern id="p-film" width="140" height="6" patternUnits="userSpaceOnUse"><line x1="0" y1="1" x2="140" y2="1" stroke="#ffffff" stroke-width="1" opacity="0.7"/></pattern>
+<pattern id="p-cells_l" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="4.5" cy="4.5" r="2.6" fill="none" stroke="#9CA3A9" stroke-width="0.6"/></pattern>
+<pattern id="p-cells_d" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="4.5" cy="4.5" r="2.6" fill="none" stroke="#AEB8BF" stroke-width="0.6"/></pattern>
+</defs></svg>
+<header class="site-head"><div class="wrap">
+  <h1>Automotive Tape Competitor Reference</h1>
+  <p class="sub">Construction, properties, performance and applications of 18 tapes from 3M · tesa · Nitto, compiled from each manufacturer's TDS and catalog. For the APAC automotive sales team.</p>
+  <div class="meta"><span class="chip">18 verified · 0 unresolved</span><span class="chip">As of 2026-09-08</span><span class="chip">Values are manufacturer typical values</span></div>
+  <div class="langtoggle" role="group" aria-label="Language"><a href="../ko/">한국어</a><a href="../en/" aria-current="true">EN</a></div>
+</div></header>
+
+<div class="bar"><div class="wrap">
+  <nav aria-label="Page navigation"><a href="#structure">Reading structure</a><a href="#products">Products</a><a href="#compare">Comparison</a><a href="#pending">Part-number notes</a><a href="#sources">Sources</a></nav>
+  <div class="filters" role="group" aria-label="Product filters"><button class="fbtn b-3m" data-filter="brand" data-value="3M" aria-pressed="false">3M</button><button class="fbtn b-tesa" data-filter="brand" data-value="tesa" aria-pressed="false">tesa</button><button class="fbtn b-nitto" data-filter="brand" data-value="Nitto" aria-pressed="false">Nitto</button><button class="fbtn" data-filter="cat" data-value="nonwoven" aria-pressed="false">Nonwoven double-sided</button><button class="fbtn" data-filter="cat" data-value="film" aria-pressed="false">Film double-sided</button><button class="fbtn" data-filter="cat" data-value="transfer" aria-pressed="false">Transfer (unsupported)</button><button class="fbtn" data-filter="cat" data-value="foam" aria-pressed="false">Foam double-sided</button><button class="fbtn" data-filter="cat" data-value="single" aria-pressed="false">Single-sided specialty</button><input class="search" id="q" type="search" placeholder="Search product / keyword" aria-label="Search product or keyword"><span class="count" id="count"></span></div>
+</div></div>
+
+<section class="sec" id="structure"><div class="wrap">
+  <h2>Read the structure, see the performance</h2>
+  <p class="lead">Every tape is a stack of liner, adhesive and carrier. Once you know what each layer decides, all 18 TDS read in the same grammar.</p>
+  <div class="hero">
+    <svg class="cs cs-big" viewBox="0 0 468 174.0" role="img" aria-label="Cross-section"><rect x="8" y="8" width="300" height="26.0" fill="#E6DAC0" rx="1.5"/><rect x="8" y="8" width="300" height="26.0" fill="url(#p-hatch)" rx="1.5"/><text x="318" y="24.2" class="cs-label">Liner (release film)</text><line x1="310" y1="21.0" x2="315" y2="21.0" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="46.0" width="300" height="30.0" fill="#EBB84A" rx="1.5"/><text x="318" y="64.2" class="cs-label">Adhesive</text><line x1="310" y1="61.0" x2="315" y2="61.0" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="88.0" width="300" height="36.0" fill="#B9C7B4" rx="1.5"/><rect x="8" y="88.0" width="300" height="36.0" fill="url(#p-fiber)" rx="1.5"/><text x="318" y="109.2" class="cs-label">Carrier</text><line x1="310" y1="106.0" x2="315" y2="106.0" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="136.0" width="300" height="30.0" fill="#EBB84A" rx="1.5"/><text x="318" y="154.2" class="cs-label">Adhesive (differential if sides differ)</text><line x1="310" y1="151.0" x2="315" y2="151.0" stroke="#9AA79E" stroke-width="0.8"/></svg>
+    <div class="howto">
+      <div><strong>Liner &rarr; conversion</strong><p>Paper (PCK / glassine) suits die-cutting &amp; flatbed work; film (PET / MOPP) suits rotary, low-particle processes. A double liner (WH / PV36) is for pre-fabrication.</p></div>
+      <div><strong>Adhesive &rarr; what, how strong, how hot</strong><p>Mostly acrylic. Tackified acrylic grips LSE (PP/PE) and rough surfaces; rubber-based suits places where hand-tearability and flexibility matter, like harnesses. Some high-performance acrylics (200MP) are not recommended for LSE.</p></div>
+      <div><strong>Carrier &rarr; thickness, flexibility, stability</strong><p>Nonwoven for conformability, film for precise gauge and heat, foam for gap-filling / stress relaxation / waterproofing. No carrier means a transfer tape.</p></div>
+    </div>
+  </div>
+  <div class="legend">
+<a class="legend-item" href="#cat-nonwoven">
+  <svg class="cs" viewBox="0 0 368 83.19999999999999" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="13.6" fill="#E6DAC0" rx="1.5"/><rect x="8" y="8" width="120" height="13.6" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="18.0" class="cs-label">Liner</text><line x1="130" y1="14.8" x2="135" y2="14.8" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="23.6" width="120" height="15.299999999999999" fill="#EBB84A" rx="1.5"/><text x="138" y="34.5" class="cs-label">Adhesive</text><line x1="130" y1="31.2" x2="135" y2="31.2" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="40.9" width="120" height="17.0" fill="#B9C7B4" rx="1.5"/><rect x="8" y="40.9" width="120" height="17.0" fill="url(#p-fiber)" rx="1.5"/><text x="138" y="52.6" class="cs-label">Nonwoven</text><line x1="130" y1="49.4" x2="135" y2="49.4" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="59.9" width="120" height="15.299999999999999" fill="#EBB84A" rx="1.5"/><text x="138" y="70.8" class="cs-label">Adhesive</text><line x1="130" y1="67.5" x2="135" y2="67.5" stroke="#9AA79E" stroke-width="0.8"/></svg>
+  <div><strong>Nonwoven double-sided <span class="cnt">7</span></strong><p>Tissue / nonwoven carrier. Flexible and conformable, easy to die-cut — usually the &#x27;general-purpose&#x27; baseline.</p><p class="codes">3M 9448A, 3M 9080HL, tesa 4959, tesa 8854, Nitto No.500, Nitto No.501L, Nitto No.5000NS</p></div>
+</a>
+<a class="legend-item" href="#cat-film">
+  <svg class="cs" viewBox="0 0 368 74.69999999999999" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="13.6" fill="#E6DAC0" rx="1.5"/><rect x="8" y="8" width="120" height="13.6" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="18.0" class="cs-label">Liner</text><line x1="130" y1="14.8" x2="135" y2="14.8" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="23.6" width="120" height="15.299999999999999" fill="#EBB84A" rx="1.5"/><text x="138" y="34.5" class="cs-label">Adhesive</text><line x1="130" y1="31.2" x2="135" y2="31.2" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="40.9" width="120" height="8.5" fill="#B3D3EA" rx="1.5"/><rect x="8" y="40.9" width="120" height="8.5" fill="url(#p-film)" rx="1.5"/><text x="138" y="48.4" class="cs-label">Film</text><line x1="130" y1="45.1" x2="135" y2="45.1" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="51.4" width="120" height="15.299999999999999" fill="#EBB84A" rx="1.5"/><text x="138" y="62.2" class="cs-label">Adhesive</text><line x1="130" y1="59.0" x2="135" y2="59.0" stroke="#9AA79E" stroke-width="0.8"/></svg>
+  <div><strong>Film double-sided <span class="cnt">4</span></strong><p>PET / PP film carrier. Dimensional stability, uniform thin gauge, precise die-cut. PET is high-heat, PP is flexible / LSE-oriented.</p><p class="codes">3M 9495MP, 3M 93010LE, tesa 4965 Original, tesa 51970</p></div>
+</a>
+<a class="legend-item" href="#cat-transfer">
+  <svg class="cs" viewBox="0 0 368 55.4" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="13.6" fill="#E6DAC0" rx="1.5"/><rect x="8" y="8" width="120" height="13.6" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="18.0" class="cs-label">Liner</text><line x1="130" y1="14.8" x2="135" y2="14.8" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="23.6" width="120" height="23.8" fill="#EBB84A" rx="1.5"/><text x="138" y="38.7" class="cs-label">Adhesive</text><line x1="130" y1="35.5" x2="135" y2="35.5" stroke="#9AA79E" stroke-width="0.8"/></svg>
+  <div><strong>Transfer (unsupported) <span class="cnt">2</span></strong><p>Adhesive only, no carrier. Thinnest and most conformable — penetrates foam &amp; fabric, but lower handling.</p><p class="codes">3M 6035PC+, 3M 7952MP</p></div>
+</a>
+<a class="legend-item" href="#cat-foam">
+  <svg class="cs" viewBox="0 0 368 100.2" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="13.6" fill="#E6DAC0" rx="1.5"/><rect x="8" y="8" width="120" height="13.6" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="18.0" class="cs-label">Liner</text><line x1="130" y1="14.8" x2="135" y2="14.8" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="23.6" width="120" height="13.6" fill="#EBB84A" rx="1.5"/><text x="138" y="33.6" class="cs-label">Adhesive</text><line x1="130" y1="30.4" x2="135" y2="30.4" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="39.2" width="120" height="37.4" fill="#EDF0F2" rx="1.5"/><rect x="8" y="39.2" width="120" height="37.4" fill="url(#p-cells_d)" rx="1.5"/><text x="138" y="61.1" class="cs-label">Foam</text><line x1="130" y1="57.9" x2="135" y2="57.9" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="78.6" width="120" height="13.6" fill="#EBB84A" rx="1.5"/><text x="138" y="88.6" class="cs-label">Adhesive</text><line x1="130" y1="85.4" x2="135" y2="85.4" stroke="#9AA79E" stroke-width="0.8"/></svg>
+  <div><strong>Foam double-sided <span class="cnt">3</span></strong><p>Foam carrier. Gap-filling, stress relaxation, waterproof/sealing. Acrylic foam (exterior structural), PE foam (mounting), thin PO foam (waterproof).</p><p class="codes">3M 4229P, tesa 62510, Nitto No.57115B</p></div>
+</a>
+<a class="legend-item" href="#cat-single">
+  <svg class="cs" viewBox="0 0 368 65.6" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="34.0" fill="#1F2224" rx="1.5"/><rect x="8" y="8" width="120" height="34.0" fill="url(#p-cells_l)" rx="1.5"/><text x="138" y="28.2" class="cs-label">Carrier</text><line x1="130" y1="25.0" x2="135" y2="25.0" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="44.0" width="120" height="13.6" fill="#D9903E" rx="1.5"/><text x="138" y="54.0" class="cs-label">Adhesive</text><line x1="130" y1="50.8" x2="135" y2="50.8" stroke="#9AA79E" stroke-width="0.8"/></svg>
+  <div><strong>Single-sided specialty <span class="cnt">2</span></strong><p>Adhesive on one side only. Harness bundling (fleece), sealing gaskets (EPDM foam) and other functional tapes.</p><p class="codes">tesa 61102, tesa 51608</p></div>
+</a></div>
+</div></section>
+
+<section class="sec" id="products"><div class="wrap">
+  <h2>Product-by-product</h2>
+  <p class="lead">Arranged by category. Every value and test condition is transcribed from the source documents below; the cross-section diagrams show the layer build only and are not to scale.</p>
+  
+<div class="cat-group" data-cat="nonwoven">
+  <h2 class="cat-title" id="cat-nonwoven">Nonwoven double-sided <span class="cnt">7</span></h2>
+  <p class="cat-desc">Tissue / nonwoven carrier. Flexible and conformable, easy to die-cut — usually the &#x27;general-purpose&#x27; baseline.</p>
+  
+<article class="entry" id="p-3m-9448a" data-brand="3M" data-cat="nonwoven" data-kw="3m 9448a 3m™ double coated tissue tape 9448a the general-purpose tissue tape — acrylic that even grabs lse plastics nonwoven nonwoven double-sided industrial grade (auto disclaimer) nameplate / badge mounting plastic film &amp; foam bonding (tissue adds dimensional stability) appliance &amp; electronics part assembly">
+  <header class="entry-head">
+    <div class="entry-id"><span class="brand b-3m">3M</span><h3>9448A</h3><span class="thick">0.15 mm</span></div>
+    <p class="fullname">3M™ Double Coated Tissue Tape 9448A</p>
+    <p class="tagline">The general-purpose tissue tape — acrylic that even grabs LSE plastics</p>
+    <div class="tags"><span class="tag tag-cat">Nonwoven double-sided</span><span class="tag">Industrial grade (auto disclaimer)</span></div>
+  </header>
+  <div class="entry-body">
+    <figure class="cs-wrap"><svg class="cs" viewBox="0 0 368 117.2" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="20.4" fill="#E6DAC0" rx="1.5"/><rect x="8" y="8" width="120" height="20.4" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="21.4" class="cs-label">PCK paper liner 0.14</text><line x1="130" y1="18.2" x2="135" y2="18.2" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="30.4" width="120" height="23.8" fill="#EBB84A" rx="1.5"/><text x="138" y="45.5" class="cs-label">Acrylic 0.075</text><line x1="130" y1="42.3" x2="135" y2="42.3" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="56.2" width="120" height="27.2" fill="#B9C7B4" rx="1.5"/><rect x="8" y="56.2" width="120" height="27.2" fill="url(#p-fiber)" rx="1.5"/><text x="138" y="73.0" class="cs-label">Tissue (cellulose)</text><line x1="130" y1="69.8" x2="135" y2="69.8" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="85.4" width="120" height="23.8" fill="#EBB84A" rx="1.5"/><text x="138" y="100.5" class="cs-label">Acrylic 0.075</text><line x1="130" y1="97.3" x2="135" y2="97.3" stroke="#9AA79E" stroke-width="0.8"/></svg><figcaption>Cross-section (not to scale)</figcaption></figure>
+    <section class="blk blk-spec"><h4>Construction &amp; properties</h4><dl><div class="kv"><dt>Adhesive</dt><dd>Acrylic, both sides 0.075 mm</dd></div><div class="kv"><dt>Carrier</dt><dd>Translucent cellulose tissue</dd></div><div class="kv"><dt>Total thickness</dt><dd>0.150 mm (w/o liner)</dd></div><div class="kv"><dt>Liner</dt><dd>White PCK paper 120 g/m², 0.14 mm, logo print</dd></div><div class="kv"><dt>Variant</dt><dd>9448AB (black)</dd></div><div class="kv"><dt>Shelf life</dt><dd>2 years from mfg.</dd></div></dl></section>
+    <section class="blk blk-perf"><h4>Performance</h4>
+      <div class="tbl-scroll"><table class="perf"><thead><tr><th>Attribute</th><th>Value</th><th>Condition</th></tr></thead><tbody><tr><th scope="row">180° peel, SUS</th><td>26.2 N/25mm</td><td class="cond">FINAT FTM1, 72 h, 300 mm/min</td></tr><tr><th scope="row">180° peel, PP / ABS / PC</th><td>13.2 / 25.2 / 26.1 N/25mm</td><td class="cond">72 h</td></tr><tr><th scope="row">Static shear, SUS</th><td>6,000 min</td><td class="cond">FINAT FTM8, 1 kg, 25.4×25.4 mm</td></tr><tr><th scope="row">Temp. resistance</th><td>Long 90 °C · Short 150 °C</td><td class="cond">per TDS</td></tr></tbody></table></div>
+      <ul class="feat"><li>Initial tack holds up even at low temperature</li><li>Soft adhesive penetrates and bonds rough surfaces</li><li>Paper liner → strong die-cutting / laminating processability</li><li>TDS carries the 3M industrial disclaimer: not for certain automotive uses (EV powertrain battery / high-voltage), not IATF-facility / PPAP guaranteed</li></ul>
+    </section>
+    <section class="blk blk-apps"><h4>Key applications</h4><ul class="apps"><li>Nameplate / badge mounting</li><li>Plastic film &amp; foam bonding (tissue adds dimensional stability)</li><li>Appliance &amp; electronics part assembly</li></ul></section>
+    <footer class="blk blk-src"><h4>Sources (TDS)</h4><ul><li><a href="https://multimedia.3m.com/mws/media/1903466O/3m-double-coated-tape-9448a-data-sheet-seer-eer-english.pdf" target="_blank" rel="noopener">3M Product Information 9448A (2022-09, EMEA)</a></li><li><a href="https://multimedia.3m.com/mws/media/900994O/3m-tm-double-coated-tissue-tape-9448a.pdf" target="_blank" rel="noopener">3M Technical Data 9448A/9448AB (2009-01, US)</a></li></ul></footer>
+  </div>
+</article>
+<article class="entry" id="p-3m-9080hl" data-brand="3M" data-cat="nonwoven" data-kw="3m 9080hl 3m™ double coated tape 9080hl high-tack economy nonwoven — a splicing tape that grips pe, pp, pvc nonwoven nonwoven double-sided provisional tds (2000) paper / film web splicing general mounting of signs, plates, foam appliance &amp; electronics part fixing">
+  <header class="entry-head">
+    <div class="entry-id"><span class="brand b-3m">3M</span><h3>9080HL</h3><span class="thick">0.16 mm</span></div>
+    <p class="fullname">3M™ Double Coated Tape 9080HL</p>
+    <p class="tagline">High-tack economy nonwoven — a splicing tape that grips PE, PP, PVC</p>
+    <div class="tags"><span class="tag tag-cat">Nonwoven double-sided</span><span class="tag">Provisional TDS (2000)</span></div>
+  </header>
+  <div class="entry-body">
+    <figure class="cs-wrap"><svg class="cs" viewBox="0 0 368 117.2" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="20.4" fill="#E6DAC0" rx="1.5"/><rect x="8" y="8" width="120" height="20.4" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="21.4" class="cs-label">PCK paper liner 0.16</text><line x1="130" y1="18.2" x2="135" y2="18.2" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="30.4" width="120" height="23.8" fill="#EBB84A" rx="1.5"/><text x="138" y="45.5" class="cs-label">Cross-linked tackified acrylic</text><line x1="130" y1="42.3" x2="135" y2="42.3" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="56.2" width="120" height="27.2" fill="#B9C7B4" rx="1.5"/><rect x="8" y="56.2" width="120" height="27.2" fill="url(#p-fiber)" rx="1.5"/><text x="138" y="73.0" class="cs-label">Nonwoven</text><line x1="130" y1="69.8" x2="135" y2="69.8" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="85.4" width="120" height="23.8" fill="#EBB84A" rx="1.5"/><text x="138" y="100.5" class="cs-label">Cross-linked tackified acrylic</text><line x1="130" y1="97.3" x2="135" y2="97.3" stroke="#9AA79E" stroke-width="0.8"/></svg><figcaption>Cross-section (not to scale)</figcaption></figure>
+    <section class="blk blk-spec"><h4>Construction &amp; properties</h4><dl><div class="kv"><dt>Adhesive</dt><dd>Cross-linked tackified acrylic</dd></div><div class="kv"><dt>Carrier</dt><dd>Nonwoven</dd></div><div class="kv"><dt>Total thickness</dt><dd>0.160 mm (±15 %)</dd></div><div class="kv"><dt>Liner</dt><dd>PCK paper 0.160 mm, logo print</dd></div><div class="kv"><dt>Color</dt><dd>White</dd></div><div class="kv"><dt>Shelf life</dt><dd>12 months</dd></div></dl></section>
+    <section class="blk blk-perf"><h4>Performance</h4>
+      <div class="tbl-scroll"><table class="perf"><thead><tr><th>Attribute</th><th>Value</th><th>Condition</th></tr></thead><tbody><tr><th scope="row">180° peel, SUS</th><td>7.5 N/10mm</td><td class="cond">ASTM D3330, 72 h, 305 mm/min</td></tr><tr><th scope="row">Static shear, SUS</th><td>10,000 min</td><td class="cond">ASTM D3654, 500 g, 6.45 cm²</td></tr><tr><th scope="row">Hot-splice shear</th><td>above 170 °C</td><td class="cond">BTM 220, 60 s</td></tr><tr><th scope="row">Liner release</th><td>max 50 g / 25.4 mm</td><td class="cond">305 mm/min</td></tr></tbody></table></div>
+      <ul class="feat"><li>Excellent initial adhesion — suited to flying splices</li><li>High adhesion to PE/PP/PVC film, paper &amp; board, coated paper &amp; varnish</li><li>Not recommended for initial application below 10 °C (low-temp holding after application is fine)</li><li>Economy general-purpose — 3M page wording: &#x27;general purpose, economy tape&#x27;</li></ul>
+    </section>
+    <section class="blk blk-apps"><h4>Key applications</h4><ul class="apps"><li>Paper / film web splicing</li><li>General mounting of signs, plates, foam</li><li>Appliance &amp; electronics part fixing</li></ul></section>
+    <footer class="blk blk-src"><h4>Sources (TDS)</h4><ul><li><a href="https://multimedia.3m.com/mws/media/83148O/9080hl-double-coated-splicing-tape.pdf" target="_blank" rel="noopener">3M Temporary Product Data Sheet 9080HL (2000-05, UK) — provisional, verify latest revision</a></li></ul></footer>
+  </div>
+</article>
+<article class="entry" id="p-tesa-4959" data-brand="tesa" data-cat="nonwoven" data-kw="tesa 4959 tesa® 4959 100 µm thin nonwoven — high tack, short-term 200 °c, proven on door linings nonwoven nonwoven double-sided vda 278 low-voc statement signs / covers / nameplate mounting automotive door-lining mounting (tesa-stated) paper / film web splicing joining flexible materials (bags, posters)">
+  <header class="entry-head">
+    <div class="entry-id"><span class="brand b-tesa">tesa</span><h3>4959</h3><span class="thick">0.10 mm</span></div>
+    <p class="fullname">tesa® 4959</p>
+    <p class="tagline">100 µm thin nonwoven — high tack, short-term 200 °C, proven on door linings</p>
+    <div class="tags"><span class="tag tag-cat">Nonwoven double-sided</span><span class="tag">VDA 278 low-VOC statement</span></div>
+  </header>
+  <div class="entry-body">
+    <figure class="cs-wrap"><svg class="cs" viewBox="0 0 368 103.6" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="20.4" fill="#E6DAC0" rx="1.5"/><rect x="8" y="8" width="120" height="20.4" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="21.4" class="cs-label">Glassine liner 71 µm</text><line x1="130" y1="18.2" x2="135" y2="18.2" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="30.4" width="120" height="20.4" fill="#EBB84A" rx="1.5"/><text x="138" y="43.8" class="cs-label">Tackified acrylic</text><line x1="130" y1="40.6" x2="135" y2="40.6" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="52.8" width="120" height="20.4" fill="#B9C7B4" rx="1.5"/><rect x="8" y="52.8" width="120" height="20.4" fill="url(#p-fiber)" rx="1.5"/><text x="138" y="66.2" class="cs-label">Nonwoven</text><line x1="130" y1="63.0" x2="135" y2="63.0" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="75.19999999999999" width="120" height="20.4" fill="#EBB84A" rx="1.5"/><text x="138" y="88.6" class="cs-label">Tackified acrylic</text><line x1="130" y1="85.4" x2="135" y2="85.4" stroke="#9AA79E" stroke-width="0.8"/></svg><figcaption>Cross-section (not to scale)</figcaption></figure>
+    <section class="blk blk-spec"><h4>Construction &amp; properties</h4><dl><div class="kv"><dt>Adhesive</dt><dd>Tackified acrylic</dd></div><div class="kv"><dt>Carrier</dt><dd>Nonwoven</dd></div><div class="kv"><dt>Total thickness</dt><dd>100 µm (3.9 mil)</dd></div><div class="kv"><dt>Liner</dt><dd>Brown glassine 71 µm (PV0) · red MOPP (PV6) · double liner (PV36)</dd></div><div class="kv"><dt>Color</dt><dd>Translucent</dd></div><div class="kv"><dt>Variant</dt><dd>160 µm version = tesa 4962</dd></div></dl></section>
+    <section class="blk blk-perf"><h4>Performance</h4>
+      <div class="tbl-scroll"><table class="perf"><thead><tr><th>Attribute</th><th>Value</th><th>Condition</th></tr></thead><tbody><tr><th scope="row">Adhesion initial → 14 d, steel</th><td>8 → 8.5 N/cm</td><td class="cond">tesa method</td></tr><tr><th scope="row">Adhesion, PC / PVC / ABS</th><td>9.5→14 · 6.5→14 · 7.5→9 N/cm</td><td class="cond">initial → 14 d</td></tr><tr><th scope="row">Adhesion, PP / PE / PET</th><td>5.5→6.5 · 4→4.5 · 7→7.5 N/cm</td><td class="cond">initial → 14 d</td></tr><tr><th scope="row">Tensile strength</th><td>8 N/cm, elongation 2 %</td><td class="cond"></td></tr><tr><th scope="row">Temp. resistance</th><td>Long 80 °C · Short 200 °C · Min −40 °C</td><td class="cond"></td></tr><tr><th scope="row">Static shear</th><td>23 °C good · 40 °C medium</td><td class="cond"></td></tr></tbody></table></div>
+      <ul class="feat"><li>Good initial tack &amp; peel, generally reliable adhesion even on LSE surfaces</li><li>Flexible nonwoven → conforms to 3D shapes, good die-cutting</li><li>UV resistance very good; plasticizer &amp; humidity resistance good</li><li>Per VDA 278 analysis: free of substances restricted by draft GB (China) &amp; Japan MHLW; ISO 10993-5/-10 skin contact</li></ul>
+    </section>
+    <section class="blk blk-apps"><h4>Key applications</h4><ul class="apps"><li>Signs / covers / nameplate mounting</li><li>Automotive door-lining mounting (tesa-stated)</li><li>Paper / film web splicing</li><li>Joining flexible materials (bags, posters)</li></ul></section>
+    <footer class="blk blk-src"><h4>Sources (TDS)</h4><ul><li><a href="https://www.tesa.com/en-us/files/download/11527148,2,medium-11527148.pdf" target="_blank" rel="noopener">tesa Product Information 4959 (2024-02-28)</a></li></ul></footer>
+  </div>
+</article>
+<article class="entry" id="p-tesa-8854" data-brand="tesa" data-cat="nonwoven" data-kw="tesa 8854 tesa® 8854 100 µm translucent nonwoven — high bond to foam / plastic / metal, short-term 260 °c nonwoven nonwoven double-sided short-term 260 °c component mounting / assembly in electronic devices nameplate mounting foam &amp; felt lamination">
+  <header class="entry-head">
+    <div class="entry-id"><span class="brand b-tesa">tesa</span><h3>8854</h3><span class="thick">0.10 mm</span></div>
+    <p class="fullname">tesa® 8854</p>
+    <p class="tagline">100 µm translucent nonwoven — high bond to foam / plastic / metal, short-term 260 °C</p>
+    <div class="tags"><span class="tag tag-cat">Nonwoven double-sided</span><span class="tag">Short-term 260 °C</span></div>
+  </header>
+  <div class="entry-body">
+    <figure class="cs-wrap"><svg class="cs" viewBox="0 0 368 103.6" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="20.4" fill="#E6DAC0" rx="1.5"/><rect x="8" y="8" width="120" height="20.4" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="21.4" class="cs-label">Brown glassine liner 71 µm</text><line x1="130" y1="18.2" x2="135" y2="18.2" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="30.4" width="120" height="20.4" fill="#EBB84A" rx="1.5"/><text x="138" y="43.8" class="cs-label">Tackified acrylic</text><line x1="130" y1="40.6" x2="135" y2="40.6" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="52.8" width="120" height="20.4" fill="#B9C7B4" rx="1.5"/><rect x="8" y="52.8" width="120" height="20.4" fill="url(#p-fiber)" rx="1.5"/><text x="138" y="66.2" class="cs-label">Nonwoven (translucent)</text><line x1="130" y1="63.0" x2="135" y2="63.0" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="75.19999999999999" width="120" height="20.4" fill="#EBB84A" rx="1.5"/><text x="138" y="88.6" class="cs-label">Tackified acrylic</text><line x1="130" y1="85.4" x2="135" y2="85.4" stroke="#9AA79E" stroke-width="0.8"/></svg><figcaption>Cross-section (not to scale)</figcaption></figure>
+    <section class="blk blk-spec"><h4>Construction &amp; properties</h4><dl><div class="kv"><dt>Adhesive</dt><dd>Tackified acrylic</dd></div><div class="kv"><dt>Carrier</dt><dd>Nonwoven</dd></div><div class="kv"><dt>Total thickness</dt><dd>100 µm</dd></div><div class="kv"><dt>Liner</dt><dd>Brown glassine 71 µm</dd></div><div class="kv"><dt>Color</dt><dd>Translucent</dd></div></dl></section>
+    <section class="blk blk-perf"><h4>Performance</h4>
+      <div class="tbl-scroll"><table class="perf"><thead><tr><th>Attribute</th><th>Value</th><th>Condition</th></tr></thead><tbody><tr><th scope="row">Adhesion initial → 14 d, steel</th><td>8.1 → 9.4 N/cm</td><td class="cond">tesa method</td></tr><tr><th scope="row">Adhesion, PC / glass / ABS</th><td>8.3→10 · 7.7→9.8 · 6.7→8.2 N/cm</td><td class="cond">initial → 14 d</td></tr><tr><th scope="row">Adhesion, PE</th><td>3.4 → 3.8 N/cm</td><td class="cond">initial → 14 d</td></tr><tr><th scope="row">Temp. resistance</th><td>Long 80 °C · Short 260 °C</td><td class="cond"></td></tr><tr><th scope="row">Static shear</th><td>23 °C good · tack very good</td><td class="cond"></td></tr></tbody></table></div>
+      <ul class="feat"><li>High bond to foam, plastic, metal</li><li>Short-term heat 260 °C — high for a nonwoven (room for reflow-adjacent processes)</li><li>UV resistance very good, humidity good, good converting</li><li>Plasticizer resistance is medium — caution on soft PVC and other plasticized substrates</li></ul>
+    </section>
+    <section class="blk blk-apps"><h4>Key applications</h4><ul class="apps"><li>Component mounting / assembly in electronic devices</li><li>Nameplate mounting</li><li>Foam &amp; felt lamination</li></ul></section>
+    <footer class="blk blk-src"><h4>Sources (TDS)</h4><ul><li><a href="https://www.tesa.com/en/files/download/11187487,5,medium-11187487.pdf" target="_blank" rel="noopener">tesa Product Information 8854 (2024-12-04)</a></li></ul></footer>
+  </div>
+</article>
+<article class="entry" id="p-nitto-no500" data-brand="Nitto" data-cat="nonwoven" data-kw="nitto no.500 nitto no.500 (500a / 500b / 500ab / 500wh) nitto&#x27;s best-selling general nonwoven — repulsion resistance &amp; temperature stability nonwoven nonwoven double-sided ul 969 punched metal nameplates plastic display-panel fixing automotive instrument-panel &amp; a/c nameplates (nitto-stated) appliance parts / rubber feet fixing">
+  <header class="entry-head">
+    <div class="entry-id"><span class="brand b-nitto">Nitto</span><h3>No.500</h3><span class="thick">0.17 mm</span></div>
+    <p class="fullname">Nitto No.500 (500A / 500B / 500AB / 500WH)</p>
+    <p class="tagline">Nitto&#x27;s best-selling general nonwoven — repulsion resistance &amp; temperature stability</p>
+    <div class="tags"><span class="tag tag-cat">Nonwoven double-sided</span><span class="tag">UL 969</span></div>
+  </header>
+  <div class="entry-body">
+    <figure class="cs-wrap"><svg class="cs" viewBox="0 0 368 120.6" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="20.4" fill="#E6DAC0" rx="1.5"/><rect x="8" y="8" width="120" height="20.4" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="21.4" class="cs-label">Release liner</text><line x1="130" y1="18.2" x2="135" y2="18.2" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="30.4" width="120" height="23.8" fill="#EBB84A" rx="1.5"/><text x="138" y="45.5" class="cs-label">Acrylic</text><line x1="130" y1="42.3" x2="135" y2="42.3" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="56.2" width="120" height="30.599999999999998" fill="#B9C7B4" rx="1.5"/><rect x="8" y="56.2" width="120" height="30.599999999999998" fill="url(#p-fiber)" rx="1.5"/><text x="138" y="74.7" class="cs-label">Nonwoven</text><line x1="130" y1="71.5" x2="135" y2="71.5" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="88.8" width="120" height="23.8" fill="#EBB84A" rx="1.5"/><text x="138" y="103.9" class="cs-label">Acrylic</text><line x1="130" y1="100.7" x2="135" y2="100.7" stroke="#9AA79E" stroke-width="0.8"/></svg><figcaption>Cross-section (not to scale)</figcaption></figure>
+    <section class="blk blk-spec"><h4>Construction &amp; properties</h4><dl><div class="kv"><dt>Adhesive</dt><dd>Acrylic</dd></div><div class="kv"><dt>Carrier</dt><dd>Flexible nonwoven</dd></div><div class="kv"><dt>Total thickness</dt><dd>0.17 mm (w/o liner)</dd></div><div class="kv"><dt>Variants</dt><dd>500A (thicker liner — for pre-fabricated plastic nameplates) · 500B/500AB (black adhesive) · 500WH/500AWH (double liner)</dd></div></dl></section>
+    <section class="blk blk-perf"><h4>Performance</h4>
+      <div class="tbl-scroll"><table class="perf"><thead><tr><th>Attribute</th><th>Value</th><th>Condition</th></tr></thead><tbody><tr><th scope="row">180° peel, SUS / Al / ABS</th><td>12.5 / 12.7 / 13.0 N/20mm</td><td class="cond">300 mm/min, PET#25 backing, 23 °C</td></tr><tr><th scope="row">180° peel vs. temp, SUS</th><td>0 °C 14.8 · 23 °C 12.5 · 40 °C 10.4 · 80 °C 8.2 N/20mm</td><td class="cond">applied &amp; measured at each temp</td></tr><tr><th scope="row">Certification</th><td>UL 969 (File MH13557)</td><td class="cond"></td></tr></tbody></table></div>
+      <ul class="feat"><li>Strong adhesion — suited to part fixing</li><li>Repulsion resistance superior to other double-sided tapes</li><li>Good for bonding substrates with large thermal-expansion mismatch (metal-plastic)</li><li>Nitto catalog wording: one of its most popular general industrial tapes</li></ul>
+    </section>
+    <section class="blk blk-apps"><h4>Key applications</h4><ul class="apps"><li>Punched metal nameplates</li><li>Plastic display-panel fixing</li><li>Automotive instrument-panel &amp; A/C nameplates (Nitto-stated)</li><li>Appliance parts / rubber feet fixing</li></ul></section>
+    <footer class="blk blk-src"><h4>Sources (TDS)</h4><ul><li><a href="https://www.nitto.com/us/en/others/faq/products/documents/file/Double_Sided_Tape_en.pdf" target="_blank" rel="noopener">Nitto Double-Coated Adhesive Tapes catalog (2023-07)</a></li><li><a href="https://www.nitto.com/us/en/others/products/file/datasheet/NJ_No.500_No500A_No500AB_EN.pdf" target="_blank" rel="noopener">Nitto TDS 10-P-0014 No.500 / 500A / 500AB</a></li></ul></footer>
+  </div>
+</article>
+<article class="entry" id="p-nitto-no501l" data-brand="Nitto" data-cat="nonwoven" data-kw="nitto no.501l nitto no.501l foam-lamination nonwoven — rough surfaces, low temp, prevents curved-edge lifting nonwoven nonwoven double-sided for foam lamination lamination of foams (ether / ester urethane, etc.) foam gasket / cushion self-adhesion (punch processing)">
+  <header class="entry-head">
+    <div class="entry-id"><span class="brand b-nitto">Nitto</span><h3>No.501L</h3><span class="thick">0.16 mm</span></div>
+    <p class="fullname">Nitto No.501L</p>
+    <p class="tagline">Foam-lamination nonwoven — rough surfaces, low temp, prevents curved-edge lifting</p>
+    <div class="tags"><span class="tag tag-cat">Nonwoven double-sided</span><span class="tag">For foam lamination</span></div>
+  </header>
+  <div class="entry-body">
+    <figure class="cs-wrap"><svg class="cs" viewBox="0 0 368 117.2" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="20.4" fill="#E6DAC0" rx="1.5"/><rect x="8" y="8" width="120" height="20.4" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="21.4" class="cs-label">Release liner</text><line x1="130" y1="18.2" x2="135" y2="18.2" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="30.4" width="120" height="23.8" fill="#EBB84A" rx="1.5"/><text x="138" y="45.5" class="cs-label">Acrylic</text><line x1="130" y1="42.3" x2="135" y2="42.3" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="56.2" width="120" height="27.2" fill="#B9C7B4" rx="1.5"/><rect x="8" y="56.2" width="120" height="27.2" fill="url(#p-fiber)" rx="1.5"/><text x="138" y="73.0" class="cs-label">Nonwoven</text><line x1="130" y1="69.8" x2="135" y2="69.8" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="85.4" width="120" height="23.8" fill="#EBB84A" rx="1.5"/><text x="138" y="100.5" class="cs-label">Acrylic</text><line x1="130" y1="97.3" x2="135" y2="97.3" stroke="#9AA79E" stroke-width="0.8"/></svg><figcaption>Cross-section (not to scale)</figcaption></figure>
+    <section class="blk blk-spec"><h4>Construction &amp; properties</h4><dl><div class="kv"><dt>Adhesive</dt><dd>Acrylic</dd></div><div class="kv"><dt>Carrier</dt><dd>Flexible nonwoven</dd></div><div class="kv"><dt>Total thickness</dt><dd>0.16 mm (w/o liner)</dd></div><div class="kv"><dt>Color</dt><dd>White</dd></div><div class="kv"><dt>Sizes</dt><dd>width 10 mm+ × 50 m</dd></div></dl></section>
+    <section class="blk blk-perf"><h4>Performance</h4>
+      <div class="tbl-scroll"><table class="perf"><thead><tr><th>Attribute</th><th>Value</th><th>Condition</th></tr></thead><tbody><tr><th scope="row">180° peel, SUS</th><td>10.0 N/20mm</td><td class="cond">300 mm/min, PET#25 backing, 23 °C</td></tr></tbody></table></div>
+      <ul class="feat"><li>Excellent adhesion to rough surfaces</li><li>Excellent low-temperature adhesion — stable in winter</li><li>Excellent repulsion resistance — prevents lifting at curved foam edges</li><li>Good roll-lamination &amp; punching processability; free of 10 RoHS substances</li></ul>
+    </section>
+    <section class="blk blk-apps"><h4>Key applications</h4><ul class="apps"><li>Lamination of foams (ether / ester urethane, etc.)</li><li>Foam gasket / cushion self-adhesion (punch processing)</li></ul></section>
+    <footer class="blk blk-src"><h4>Sources (TDS)</h4><ul><li><a href="https://www.nitto.com/us/en/others/products/file/datasheet/NJ_No.501L_EN.pdf" target="_blank" rel="noopener">Nitto TDS 10-P-0015 No.501L</a></li></ul></footer>
+  </div>
+</article>
+<article class="entry" id="p-nitto-no5000ns" data-brand="Nitto" data-cat="nonwoven" data-kw="nitto no.5000ns nitto no.5000ns (5000nswh / 5000nsl) re-peelable high-strength nonwoven — no tearing, no residue, grips pp nonwoven nonwoven double-sided re-peelable ul metal-plate / plastic-plate / foam bonding cushion / sealing material in oa equipment, tvs, appliances applications needing re-peeling / part recycling">
+  <header class="entry-head">
+    <div class="entry-id"><span class="brand b-nitto">Nitto</span><h3>No.5000NS</h3><span class="thick">0.16 mm</span></div>
+    <p class="fullname">Nitto No.5000NS (5000NSWH / 5000NSL)</p>
+    <p class="tagline">Re-peelable high-strength nonwoven — no tearing, no residue, grips PP</p>
+    <div class="tags"><span class="tag tag-cat">Nonwoven double-sided</span><span class="tag">Re-peelable</span><span class="tag">UL</span></div>
+  </header>
+  <div class="entry-body">
+    <figure class="cs-wrap"><svg class="cs" viewBox="0 0 368 117.2" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="20.4" fill="#E6DAC0" rx="1.5"/><rect x="8" y="8" width="120" height="20.4" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="21.4" class="cs-label">Release liner (purple print)</text><line x1="130" y1="18.2" x2="135" y2="18.2" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="30.4" width="120" height="23.8" fill="#EBB84A" rx="1.5"/><text x="138" y="45.5" class="cs-label">Acrylic</text><line x1="130" y1="42.3" x2="135" y2="42.3" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="56.2" width="120" height="27.2" fill="#9FB39B" rx="1.5"/><rect x="8" y="56.2" width="120" height="27.2" fill="url(#p-fiber)" rx="1.5"/><text x="138" y="73.0" class="cs-label">High-strength nonwoven</text><line x1="130" y1="69.8" x2="135" y2="69.8" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="85.4" width="120" height="23.8" fill="#EBB84A" rx="1.5"/><text x="138" y="100.5" class="cs-label">Acrylic</text><line x1="130" y1="97.3" x2="135" y2="97.3" stroke="#9AA79E" stroke-width="0.8"/></svg><figcaption>Cross-section (not to scale)</figcaption></figure>
+    <section class="blk blk-spec"><h4>Construction &amp; properties</h4><dl><div class="kv"><dt>Adhesive</dt><dd>Acrylic</dd></div><div class="kv"><dt>Carrier</dt><dd>High-strength flexible nonwoven</dd></div><div class="kv"><dt>Total thickness</dt><dd>0.16 mm (w/o liner)</dd></div><div class="kv"><dt>Variants</dt><dd>5000NSWH (double liner) · 5000NSL (light-release liner)</dd></div><div class="kv"><dt>Sizes</dt><dd>width 3–1,200 mm × 50 m</dd></div></dl></section>
+    <section class="blk blk-perf"><h4>Performance</h4>
+      <div class="tbl-scroll"><table class="perf"><thead><tr><th>Attribute</th><th>Value</th><th>Condition</th></tr></thead><tbody><tr><th scope="row">180° peel, SUS / Al / PP / ABS</th><td>16.0 / 15.0 / 14.5 / 15.0 N/20mm</td><td class="cond">2 kg roller, after 30 min, PET#25 backing</td></tr><tr><th scope="row">180° peel, PC / rigid PVC / PET / glass / POM</th><td>16.0 / 19.0 / 15.0 / 14.5 / 14.0 N/20mm</td><td class="cond"></td></tr><tr><th scope="row">180° peel, urethane foam</th><td>ester 10.0 · ether 7.0 N/20mm</td><td class="cond"></td></tr><tr><th scope="row">Shear adhesion, SUS</th><td>450 N (20×20 mm)</td><td class="cond">49 N press 10 s, 50 mm/min</td></tr><tr><th scope="row">Peel after aging, SUS</th><td>80 °C 30 d 26.8 · 60 °C/90 %RH 30 d 27.0 · heat shock (−40↔90 °C) 100 cyc 34.8 N/20mm</td><td class="cond"></td></tr><tr><th scope="row">Effect of press</th><td>0.1 kg roller 13.3 → 5 kg 16.1 N/20mm</td><td class="cond"></td></tr></tbody></table></div>
+      <ul class="feat"><li>Re-peels without tearing, minimal residue (per 60 °C/90 %RH 15 d test; slight residue on PC/PVC)</li><li>Wide service-temperature range, excellent repulsion resistance</li><li>UL recognized (MH13557), free of 10 RoHS substances</li></ul>
+    </section>
+    <section class="blk blk-apps"><h4>Key applications</h4><ul class="apps"><li>Metal-plate / plastic-plate / foam bonding</li><li>Cushion / sealing material in OA equipment, TVs, appliances</li><li>Applications needing re-peeling / part recycling</li></ul></section>
+    <footer class="blk blk-src"><h4>Sources (TDS)</h4><ul><li><a href="https://www.nitto.com/kr/ko/others/products/file/datasheet/NJ_No.5000NS_EN.pdf" target="_blank" rel="noopener">Nitto TDS 10-P-0012 No.5000NS (2026-08)</a></li></ul></footer>
+  </div>
+</article>
+</div>
+<div class="cat-group" data-cat="film">
+  <h2 class="cat-title" id="cat-film">Film double-sided <span class="cnt">4</span></h2>
+  <p class="cat-desc">PET / PP film carrier. Dimensional stability, uniform thin gauge, precise die-cut. PET is high-heat, PP is flexible / LSE-oriented.</p>
+  
+<article class="entry" id="p-3m-9495mp" data-brand="3M" data-cat="film" data-kw="3m 9495mp 3m™ double coated tape 9495mp 200mp acrylic pet carrier — the heat / chemical / die-cut benchmark; lse not recommended film film double-sided lse not recommended graphic overlays / membrane switches nameplates / appliqués / decorative trim thermal &amp; sound damping in electronics &amp; appliances gasket &amp; lens attachment in electronic assemblies">
+  <header class="entry-head">
+    <div class="entry-id"><span class="brand b-3m">3M</span><h3>9495MP</h3><span class="thick">0.14 mm</span></div>
+    <p class="fullname">3M™ Double Coated Tape 9495MP</p>
+    <p class="tagline">200MP acrylic PET carrier — the heat / chemical / die-cut benchmark; LSE not recommended</p>
+    <div class="tags"><span class="tag tag-cat">Film double-sided</span><span class="tag">LSE not recommended</span></div>
+  </header>
+  <div class="entry-body">
+    <figure class="cs-wrap"><svg class="cs" viewBox="0 0 368 96.8" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="20.4" fill="#E6DAC0" rx="1.5"/><rect x="8" y="8" width="120" height="20.4" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="21.4" class="cs-label">58# PCK paper liner 0.10</text><line x1="130" y1="18.2" x2="135" y2="18.2" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="30.4" width="120" height="23.8" fill="#EBB84A" rx="1.5"/><text x="138" y="45.5" class="cs-label">200MP acrylic 0.074</text><line x1="130" y1="42.3" x2="135" y2="42.3" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="56.2" width="120" height="10.2" fill="#B3D3EA" rx="1.5"/><rect x="8" y="56.2" width="120" height="10.2" fill="url(#p-film)" rx="1.5"/><text x="138" y="64.5" class="cs-label">Clear PET 0.013</text><line x1="130" y1="61.3" x2="135" y2="61.3" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="68.4" width="120" height="20.4" fill="#EBB84A" rx="1.5"/><text x="138" y="81.8" class="cs-label">200MP acrylic 0.058</text><line x1="130" y1="78.6" x2="135" y2="78.6" stroke="#9AA79E" stroke-width="0.8"/></svg><figcaption>Cross-section (not to scale)</figcaption></figure>
+    <section class="blk blk-spec"><h4>Construction &amp; properties</h4><dl><div class="kv"><dt>Adhesive</dt><dd>3M 200MP high-performance acrylic, 0.074 / 0.058 mm</dd></div><div class="kv"><dt>Carrier</dt><dd>Clear PET 0.013 mm</dd></div><div class="kv"><dt>Total thickness</dt><dd>0.14 mm (5.7 mil)</dd></div><div class="kv"><dt>Liner</dt><dd>58# PCK paper 0.10 mm, tan, &#x27;3M 200MP&#x27; print</dd></div><div class="kv"><dt>Variants</dt><dd>9495MPF (PET film liner), 9495B (black PET)</dd></div><div class="kv"><dt>Shelf life</dt><dd>2 years</dd></div></dl></section>
+    <section class="blk blk-perf"><h4>Performance</h4>
+      <div class="tbl-scroll"><table class="perf"><thead><tr><th>Attribute</th><th>Value</th><th>Condition</th></tr></thead><tbody><tr><th scope="row">90° peel, SUS</th><td>7.7 (15 min) · 8.8 (72 h) · 9.9 N/cm (72 h, 70 °C)</td><td class="cond">ASTM D3330</td></tr><tr><th scope="row">180° peel, SUS</th><td>10.9 N/cm</td><td class="cond">72 h, 2 mil Al foil</td></tr><tr><th scope="row">90° peel, ABS / acrylic / PC</th><td>6.6 N/cm each</td><td class="cond">72 h</td></tr><tr><th scope="row">Static shear</th><td>1,000 g RT · 500 g 70 °C both &gt;10,000 min</td><td class="cond">ASTM D3654 mod.</td></tr><tr><th scope="row">Temp. resistance</th><td>Long 121 °C · Short 149 °C</td><td class="cond">per TDS</td></tr><tr><th scope="row">Dielectric strength</th><td>1,373 V/mil</td><td class="cond"></td></tr></tbody></table></div>
+      <ul class="feat"><li>Resists humidity (32 °C/90 %RH 7 d), water (100 h immersion), UV, thermal cycling (70/−29/22 °C ×4), chemicals (oil, mild acid/alkali)</li><li>Thin PET carrier → dimensional stability, easy slitting/die-cutting, minimal cockling at high humidity</li><li>Not recommended for LSE plastics (PP/PE) — 3M points to 300MP/300LSE for those</li><li>RoHS / REACH compliant</li></ul>
+    </section>
+    <section class="blk blk-apps"><h4>Key applications</h4><ul class="apps"><li>Graphic overlays / membrane switches</li><li>Nameplates / appliqués / decorative trim</li><li>Thermal &amp; sound damping in electronics &amp; appliances</li><li>Gasket &amp; lens attachment in electronic assemblies</li></ul></section>
+    <footer class="blk blk-src"><h4>Sources (TDS)</h4><ul><li><a href="https://multimedia.3m.com/mws/media/771684O/3m-tm-double-coated-tapes-9492mp-9495mp-9495mpf-9495b.pdf" target="_blank" rel="noopener">3M Technical Data 9492MP·9495MP·9495MPF·9495B (2011-11)</a></li></ul></footer>
+  </div>
+</article>
+<article class="entry" id="p-3m-93010le" data-brand="3M" data-cat="film" data-kw="3m 93010le 3m™ double coated tape 93010le 300lse acrylic pet carrier — high bond to lse (pp, powder coat) and even oily surfaces film film double-sided high bond to lse ul 746c foam-to-powder-coat bonding lse plastic adhesion nameplates / decorative trim dissimilar-material (metal–plastic) bonding">
+  <header class="entry-head">
+    <div class="entry-id"><span class="brand b-3m">3M</span><h3>93010LE</h3><span class="thick">0.10 mm</span></div>
+    <p class="fullname">3M™ Double Coated Tape 93010LE</p>
+    <p class="tagline">300LSE acrylic PET carrier — high bond to LSE (PP, powder coat) and even oily surfaces</p>
+    <div class="tags"><span class="tag tag-cat">Film double-sided</span><span class="tag">High bond to LSE</span><span class="tag">UL 746C</span></div>
+  </header>
+  <div class="entry-body">
+    <figure class="cs-wrap"><svg class="cs" viewBox="0 0 368 96.8" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="20.4" fill="#E6DAC0" rx="1.5"/><rect x="8" y="8" width="120" height="20.4" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="21.4" class="cs-label">58# PCK paper liner 0.11</text><line x1="130" y1="18.2" x2="135" y2="18.2" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="30.4" width="120" height="22.099999999999998" fill="#EBB84A" rx="1.5"/><text x="138" y="44.6" class="cs-label">300LSE acrylic 0.044</text><line x1="130" y1="41.4" x2="135" y2="41.4" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="54.5" width="120" height="10.2" fill="#B3D3EA" rx="1.5"/><rect x="8" y="54.5" width="120" height="10.2" fill="url(#p-film)" rx="1.5"/><text x="138" y="62.8" class="cs-label">Clear PET 0.012</text><line x1="130" y1="59.6" x2="135" y2="59.6" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="66.7" width="120" height="22.099999999999998" fill="#EBB84A" rx="1.5"/><text x="138" y="81.0" class="cs-label">300LSE acrylic 0.044</text><line x1="130" y1="77.8" x2="135" y2="77.8" stroke="#9AA79E" stroke-width="0.8"/></svg><figcaption>Cross-section (not to scale)</figcaption></figure>
+    <section class="blk blk-spec"><h4>Construction &amp; properties</h4><dl><div class="kv"><dt>Adhesive</dt><dd>3M 300LSE high-strength acrylic, both sides 0.044 mm</dd></div><div class="kv"><dt>Carrier</dt><dd>Clear PET 0.012 mm</dd></div><div class="kv"><dt>Total thickness</dt><dd>0.10 mm (3.9 mil, w/o liner)</dd></div><div class="kv"><dt>Liner</dt><dd>Tan 58# PCK paper 0.11 mm</dd></div><div class="kv"><dt>Series</dt><dd>93015LE (0.15) · 93020LE (0.20 mm)</dd></div><div class="kv"><dt>Shelf life</dt><dd>2 years</dd></div></dl></section>
+    <section class="blk blk-perf"><h4>Performance</h4>
+      <div class="tbl-scroll"><table class="perf"><thead><tr><th>Attribute</th><th>Value</th><th>Condition</th></tr></thead><tbody><tr><th scope="row">180° peel, SUS</th><td>9.3 (15 min) → 12.0 N/cm (72 h)</td><td class="cond">ASTM D3330 mod., 2 mil Al foil</td></tr><tr><th scope="row">180° peel, PP</th><td>10.4 → 12.0 N/cm</td><td class="cond">15 min → 72 h — holds 12 N/cm on LSE</td></tr><tr><th scope="row">180° peel, PC / ABS</th><td>12.3→15.3 · 8.8→12.0 N/cm</td><td class="cond">15 min → 72 h</td></tr><tr><th scope="row">Static shear</th><td>1,000 g (23 °C) &amp; 500 g (70 °C) both 10,000 min</td><td class="cond">ASTM D3654 mod.</td></tr><tr><th scope="row">Temp. resistance</th><td>Long 121 °C · Short 149 °C</td><td class="cond"></td></tr><tr><th scope="row">Breakdown voltage</th><td>5,600 V</td><td class="cond"></td></tr></tbody></table></div>
+      <ul class="feat"><li>High bond to LSE (PP, powder coat) — fills the gap where 9495MP (200MP) cannot</li><li>Excellent adhesion even to oil-contaminated machine-part surfaces</li><li>Resists humidity (32 °C/90 %RH 7 d), water (100 h), UV, thermal cycling (70/−29/22 °C ×4), chemicals</li><li>PET carrier → dimensional stability &amp; easy die-cut; UL 746C; not recommended for initial application below 10 °C</li></ul>
+    </section>
+    <section class="blk blk-apps"><h4>Key applications</h4><ul class="apps"><li>Foam-to-powder-coat bonding</li><li>LSE plastic adhesion</li><li>Nameplates / decorative trim</li><li>Dissimilar-material (metal–plastic) bonding</li></ul></section>
+    <footer class="blk blk-src"><h4>Sources (TDS)</h4><ul><li><a href="https://multimedia.3m.com/mws/media/1566788O/iatd-high-strength-double-coated-tape-tech-data-sheet.pdf" target="_blank" rel="noopener">3M Technical Data 93010LE·93015LE·93020LE (2017-11)</a></li><li><a href="https://www.3m.co.kr/3M/ko_KR/p/d/b40070398/" target="_blank" rel="noopener">3M Korea product page 93010LE</a></li></ul></footer>
+  </div>
+</article>
+<article class="entry" id="p-tesa-4965original" data-brand="tesa" data-cat="film" data-kw="tesa 4965 original tesa® 4965 original (next gen) patented tackified-acrylic pet carrier — short-term 200 °c, tesa&#x27;s flagship that grabs lse too film film double-sided vda 278 low-voc statement ul 969 en 45545-2 automotive abs plastic-part mounting (tesa-stated) rubber/epdm profile self-adhesion furniture decorative moldings &amp; profiles battery pack / lens / touchscreen mounting in electronics">
+  <header class="entry-head">
+    <div class="entry-id"><span class="brand b-tesa">tesa</span><h3>4965 Original</h3><span class="thick">0.205 mm</span></div>
+    <p class="fullname">tesa® 4965 Original (Next Gen)</p>
+    <p class="tagline">Patented tackified-acrylic PET carrier — short-term 200 °C, tesa&#x27;s flagship that grabs LSE too</p>
+    <div class="tags"><span class="tag tag-cat">Film double-sided</span><span class="tag">VDA 278 low-VOC statement</span><span class="tag">UL 969</span><span class="tag">EN 45545-2</span></div>
+  </header>
+  <div class="entry-body">
+    <figure class="cs-wrap"><svg class="cs" viewBox="0 0 368 107.0" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="17.0" fill="#F1B9B1" rx="1.5"/><text x="138" y="19.7" class="cs-label">Red MOPP liner 80 µm</text><line x1="130" y1="16.5" x2="135" y2="16.5" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="27.0" width="120" height="27.2" fill="#EBB84A" rx="1.5"/><text x="138" y="43.8" class="cs-label">Tackified acrylic</text><line x1="130" y1="40.6" x2="135" y2="40.6" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="56.2" width="120" height="13.6" fill="#B3D3EA" rx="1.5"/><rect x="8" y="56.2" width="120" height="13.6" fill="url(#p-film)" rx="1.5"/><text x="138" y="66.2" class="cs-label">PET (90 % recycled)</text><line x1="130" y1="63.0" x2="135" y2="63.0" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="71.8" width="120" height="27.2" fill="#EBB84A" rx="1.5"/><text x="138" y="88.6" class="cs-label">Tackified acrylic</text><line x1="130" y1="85.4" x2="135" y2="85.4" stroke="#9AA79E" stroke-width="0.8"/></svg><figcaption>Cross-section (not to scale)</figcaption></figure>
+    <section class="blk blk-spec"><h4>Construction &amp; properties</h4><dl><div class="kv"><dt>Adhesive</dt><dd>Tackified acrylic (patented formulation, biomass-balanced)</dd></div><div class="kv"><dt>Carrier</dt><dd>PET (90 % recycled content)</dd></div><div class="kv"><dt>Total thickness</dt><dd>205 µm (8.1 mil)</dd></div><div class="kv"><dt>Liner</dt><dd>Red MOPP 80 µm (PV0) · glassine (PV1/PV2) · white paper (PV4) · white MOPP (PV8)</dd></div><div class="kv"><dt>Color</dt><dd>Transparent</dd></div><div class="kv"><dt>Variants</dt><dd>Team 4965: 4967 (160 µm), 49652 (high-clarity) etc.</dd></div></dl></section>
+    <section class="blk blk-perf"><h4>Performance</h4>
+      <div class="tbl-scroll"><table class="perf"><thead><tr><th>Attribute</th><th>Value</th><th>Condition</th></tr></thead><tbody><tr><th scope="row">Adhesion initial → 14 d, steel</th><td>11.5 → 11.8 N/cm</td><td class="cond">tesa method</td></tr><tr><th scope="row">Adhesion, PC / ABS / PS / PVC</th><td>12.6→14 · 10.3→12 · 10.6→12 · 8.7→13 N/cm</td><td class="cond">initial → 14 d</td></tr><tr><th scope="row">Adhesion, PP / PE / Al / PET</th><td>6.8→7.9 · 5.8→6.9 · 9.2→10.6 · 9.2→9.5 N/cm</td><td class="cond">initial → 14 d</td></tr><tr><th scope="row">Tensile strength</th><td>20 N/cm, elongation 50 %</td><td class="cond"></td></tr><tr><th scope="row">Temp. resistance</th><td>Long 100 °C · Short 200 °C · Min −40 °C</td><td class="cond"></td></tr><tr><th scope="row">Static shear</th><td>23 °C · 40 °C very good</td><td class="cond"></td></tr></tbody></table></div>
+      <ul class="feat"><li>For demanding conditions (heavy load, high heat), usable immediately after assembly</li><li>Reliable adhesion even on LSE surfaces; humidity resistance very good, plasticizer good</li><li>UL 969 (MH 18055), DIN EN 45545-2 (2R1+HL3, rail fire), ISO 10993 skin contact</li><li>Per VDA 278: free of substances restricted by draft GB (China) &amp; Japan; Next Gen is −40 % CO₂</li></ul>
+    </section>
+    <section class="blk blk-apps"><h4>Key applications</h4><ul class="apps"><li>Automotive ABS plastic-part mounting (tesa-stated)</li><li>Rubber/EPDM profile self-adhesion</li><li>Furniture decorative moldings &amp; profiles</li><li>Battery pack / lens / touchscreen mounting in electronics</li></ul></section>
+    <footer class="blk blk-src"><h4>Sources (TDS)</h4><ul><li><a href="https://www.tesa.com/en-us/files/download/11527157,4,medium-11527157.pdf" target="_blank" rel="noopener">tesa Product Information 4965 Original Next Gen (2025-02-12)</a></li></ul></footer>
+  </div>
+</article>
+<article class="entry" id="p-tesa-51970" data-brand="tesa" data-cat="film" data-kw="tesa 51970 tesa® 51970 clear pp film carrier — high tack on rough, slightly dirty and lse surfaces film film double-sided vda 278 low-voc statement plastic &amp; wooden trim mounting transparent signs &amp; scales decorative materials / pos displays appliance assembly">
+  <header class="entry-head">
+    <div class="entry-id"><span class="brand b-tesa">tesa</span><h3>51970</h3><span class="thick">0.22 mm</span></div>
+    <p class="fullname">tesa® 51970</p>
+    <p class="tagline">Clear PP film carrier — high tack on rough, slightly dirty and LSE surfaces</p>
+    <div class="tags"><span class="tag tag-cat">Film double-sided</span><span class="tag">VDA 278 low-VOC statement</span></div>
+  </header>
+  <div class="entry-body">
+    <figure class="cs-wrap"><svg class="cs" viewBox="0 0 368 113.8" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="20.4" fill="#E6DAC0" rx="1.5"/><rect x="8" y="8" width="120" height="20.4" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="21.4" class="cs-label">Brown glassine liner 69 µm</text><line x1="130" y1="18.2" x2="135" y2="18.2" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="30.4" width="120" height="27.2" fill="#EBB84A" rx="1.5"/><text x="138" y="47.2" class="cs-label">Tackified acrylic (high tack)</text><line x1="130" y1="44.0" x2="135" y2="44.0" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="59.599999999999994" width="120" height="17.0" fill="#BFE0CC" rx="1.5"/><rect x="8" y="59.599999999999994" width="120" height="17.0" fill="url(#p-film)" rx="1.5"/><text x="138" y="71.3" class="cs-label">PP film</text><line x1="130" y1="68.1" x2="135" y2="68.1" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="78.6" width="120" height="27.2" fill="#EBB84A" rx="1.5"/><text x="138" y="95.4" class="cs-label">Tackified acrylic (high tack)</text><line x1="130" y1="92.2" x2="135" y2="92.2" stroke="#9AA79E" stroke-width="0.8"/></svg><figcaption>Cross-section (not to scale)</figcaption></figure>
+    <section class="blk blk-spec"><h4>Construction &amp; properties</h4><dl><div class="kv"><dt>Adhesive</dt><dd>Tackified acrylic (high tack)</dd></div><div class="kv"><dt>Carrier</dt><dd>PP film</dd></div><div class="kv"><dt>Total thickness</dt><dd>220 µm</dd></div><div class="kv"><dt>Liner</dt><dd>Brown glassine 69/78 µm (PV0/PV2) · white glassine (PV1) · red MOPP (PV6) · white MOPP (PV8)</dd></div><div class="kv"><dt>Color</dt><dd>Transparent</dd></div><div class="kv"><dt>Variant</dt><dd>Extended (finger-lift) liner version = tesa 61970</dd></div></dl></section>
+    <section class="blk blk-perf"><h4>Performance</h4>
+      <div class="tbl-scroll"><table class="perf"><thead><tr><th>Attribute</th><th>Value</th><th>Condition</th></tr></thead><tbody><tr><th scope="row">Adhesion initial → 14 d, steel</th><td>13 → 13.5 N/cm</td><td class="cond">tesa method</td></tr><tr><th scope="row">Adhesion, PC / PVC / ABS / PS</th><td>15→16.5 · 11.5→17.5 · 12.5→14.5 · 13→14.5 N/cm</td><td class="cond">initial → 14 d</td></tr><tr><th scope="row">Adhesion, PP / PE / Al / PET</th><td>8.5→10 · 7→8 · 11.5→12.5 · 11→11.5 N/cm</td><td class="cond">initial → 14 d</td></tr><tr><th scope="row">Tensile strength</th><td>50 N/cm, elongation 150 %</td><td class="cond"></td></tr><tr><th scope="row">Temp. resistance</th><td>Long 80 °C · Short 130 °C · Min −40 °C</td><td class="cond"></td></tr></tbody></table></div>
+      <ul class="feat"><li>Combination of high initial tack and immediate adhesion</li><li>Bonds rough / slightly dirty surfaces, reliable on LSE</li><li>Light- &amp; aging-resistant acrylic → long-term use; humidity resistance very good</li><li>Per VDA 278: free of draft GB &amp; Japan restricted substances; paper liner 30 % recycled fiber</li></ul>
+    </section>
+    <section class="blk blk-apps"><h4>Key applications</h4><ul class="apps"><li>Plastic &amp; wooden trim mounting</li><li>Transparent signs &amp; scales</li><li>Decorative materials / POS displays</li><li>Appliance assembly</li></ul></section>
+    <footer class="blk blk-src"><h4>Sources (TDS)</h4><ul><li><a href="https://www.tesa.com/en/files/download/11187755,8,medium-11187755.pdf" target="_blank" rel="noopener">tesa Product Information 51970 (2025-10-25)</a></li></ul></footer>
+  </div>
+</article>
+</div>
+<div class="cat-group" data-cat="transfer">
+  <h2 class="cat-title" id="cat-transfer">Transfer (unsupported) <span class="cnt">2</span></h2>
+  <p class="cat-desc">Adhesive only, no carrier. Thinnest and most conformable — penetrates foam &amp; fabric, but lower handling.</p>
+  
+<article class="entry" id="p-3m-6035pc+" data-brand="3M" data-cat="transfer" data-kw="3m 6035pc+ 3m™ adhesive transfer tape 6035pc+ low-fogging transfer tape for automotive interiors — 300mp that bonds foam &amp; fabric transfer transfer (unsupported) low fogging (oem fog spec) industrial grade (auto disclaimer) interior anti-squeak (bsr) fabric &amp; foam bonding foam / felt gasket self-adhesion general interior part assembly">
+  <header class="entry-head">
+    <div class="entry-id"><span class="brand b-3m">3M</span><h3>6035PC+</h3><span class="thick">0.127 mm</span></div>
+    <p class="fullname">3M™ Adhesive Transfer Tape 6035PC+</p>
+    <p class="tagline">Low-fogging transfer tape for automotive interiors — 300MP that bonds foam &amp; fabric</p>
+    <div class="tags"><span class="tag tag-cat">Transfer (unsupported)</span><span class="tag">Low fogging (OEM fog spec)</span><span class="tag">Industrial grade (auto disclaimer)</span></div>
+  </header>
+  <div class="entry-body">
+    <figure class="cs-wrap"><svg class="cs" viewBox="0 0 368 82.6" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="20.4" fill="#E6DAC0" rx="1.5"/><rect x="8" y="8" width="120" height="20.4" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="21.4" class="cs-label">58# PCK paper liner 0.107</text><line x1="130" y1="18.2" x2="135" y2="18.2" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="30.4" width="120" height="44.199999999999996" fill="#EBB84A" rx="1.5"/><text x="138" y="55.7" class="cs-label">300MP+ acrylic 0.127 (unsupported)</text><line x1="130" y1="52.5" x2="135" y2="52.5" stroke="#9AA79E" stroke-width="0.8"/></svg><figcaption>Cross-section (not to scale)</figcaption></figure>
+    <section class="blk blk-spec"><h4>Construction &amp; properties</h4><dl><div class="kv"><dt>Adhesive</dt><dd>3M 300MP+ acrylic (no carrier)</dd></div><div class="kv"><dt>Total thickness</dt><dd>0.127 mm (5 mil)</dd></div><div class="kv"><dt>Liner</dt><dd>58# PCK paper 0.107 mm</dd></div><div class="kv"><dt>Shelf life</dt><dd>24 months</dd></div></dl></section>
+    <section class="blk blk-perf"><h4>Performance</h4>
+      <div class="tbl-scroll"><table class="perf"><thead><tr><th>Attribute</th><th>Value</th><th>Condition</th></tr></thead><tbody><tr><th scope="row">90° peel, SUS</th><td>12 N/cm (23 °C) · 16 N/cm (70 °C)</td><td class="cond">ASTM D3330, 72 h, 2 mil Al foil</td></tr><tr><th scope="row">90° peel, ABS / PP</th><td>6 / 5 N/cm</td><td class="cond">23 °C, 72 h</td></tr><tr><th scope="row">180° peel, SUS</th><td>13 N/cm</td><td class="cond">72 h</td></tr><tr><th scope="row">Humidity</th><td>No adverse effect after 38 °C · 100 %RH</td><td class="cond">per TDS</td></tr><tr><th scope="row">Temp. resistance</th><td>No numeric value — &#x27;withstands automotive-interior heat&#x27;</td><td class="cond">TDS wording</td></tr></tbody></table></div>
+      <ul class="feat"><li>Meets automotive OEM fogging specs (low-fog design, SAE J1756 tested)</li><li>High initial tack — immediate assembly-line application</li><li>Bonds foam, fabric, rough / textured surfaces</li><li>TDS carries the 3M industrial disclaimer (not for EV powertrain battery / high-voltage uses)</li></ul>
+    </section>
+    <section class="blk blk-apps"><h4>Key applications</h4><ul class="apps"><li>Interior anti-squeak (BSR) fabric &amp; foam bonding</li><li>Foam / felt gasket self-adhesion</li><li>General interior part assembly</li></ul></section>
+    <footer class="blk blk-src"><h4>Sources (TDS)</h4><ul><li><a href="https://multimedia.3m.com/mws/media/2366096O/3M-Adhesive-Transfer-Tape-6035PC.pdf?pif=000267" target="_blank" rel="noopener">3M Technical Data Sheet 6035PC (2024-09)</a></li></ul></footer>
+  </div>
+</article>
+<article class="entry" id="p-3m-7952mp" data-brand="3M" data-cat="transfer" data-kw="3m 7952mp 3m™ adhesive transfer tape (double linered) 7952mp 200mp unsupported transfer (double liner) — high shear on metal &amp; hse plastics, the nameplate standard transfer transfer (unsupported) double liner lse not recommended ul 969 industrial grade (auto disclaimer) metal nameplate / rating-plate attachment graphic overlays / membrane switches subsurface-printed pc/pet graphic attachment rotary die-cut industrial foam gaskets">
+  <header class="entry-head">
+    <div class="entry-id"><span class="brand b-3m">3M</span><h3>7952MP</h3><span class="thick">0.06 mm</span></div>
+    <p class="fullname">3M™ Adhesive Transfer Tape (Double Linered) 7952MP</p>
+    <p class="tagline">200MP unsupported transfer (double liner) — high shear on metal &amp; HSE plastics, the nameplate standard</p>
+    <div class="tags"><span class="tag tag-cat">Transfer (unsupported)</span><span class="tag">Double liner</span><span class="tag">LSE not recommended</span><span class="tag">UL 969</span><span class="tag">Industrial grade (auto disclaimer)</span></div>
+  </header>
+  <div class="entry-body">
+    <figure class="cs-wrap"><svg class="cs" viewBox="0 0 368 84.6" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="18.7" fill="#E6DAC0" rx="1.5"/><rect x="8" y="8" width="120" height="18.7" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="20.6" class="cs-label">Primary liner 58# PCK 0.11 (stays with die-cut)</text><line x1="130" y1="17.4" x2="135" y2="17.4" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="28.7" width="120" height="27.2" fill="#EBB84A" rx="1.5"/><text x="138" y="45.5" class="cs-label">200MP acrylic 0.06 (unsupported)</text><line x1="130" y1="42.3" x2="135" y2="42.3" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="57.9" width="120" height="18.7" fill="#E6DAC0" rx="1.5"/><rect x="8" y="57.9" width="120" height="18.7" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="70.5" class="cs-label">Secondary liner 58# PCK 0.11 (removed first)</text><line x1="130" y1="67.2" x2="135" y2="67.2" stroke="#9AA79E" stroke-width="0.8"/></svg><figcaption>Cross-section (not to scale)</figcaption></figure>
+    <section class="blk blk-spec"><h4>Construction &amp; properties</h4><dl><div class="kv"><dt>Adhesive</dt><dd>3M 200MP high-performance acrylic (no carrier)</dd></div><div class="kv"><dt>Total thickness</dt><dd>0.06 mm (2.3 mil)</dd></div><div class="kv"><dt>Liner</dt><dd>Both 58# PCK paper 0.11 mm, tan — primary stays with die-cut part, secondary removed first</dd></div><div class="kv"><dt>Tg / min. service</dt><dd>−35 °C / −40 °C</dd></div><div class="kv"><dt>Shelf life</dt><dd>24 months</dd></div><div class="kv"><dt>200MP family</dt><dd>467MP·468MP·7955MP etc. share the adhesive</dd></div></dl></section>
+    <section class="blk blk-perf"><h4>Performance</h4>
+      <div class="tbl-scroll"><table class="perf"><thead><tr><th>Attribute</th><th>Value</th><th>Condition</th></tr></thead><tbody><tr><th scope="row">90° peel, SUS</th><td>10 N/cm (23 °C) → 16.7 N/cm (70 °C)</td><td class="cond">ASTM D3330, 72 h, 2 mil Al foil</td></tr><tr><th scope="row">180° peel, SUS</th><td>9.6 N/cm</td><td class="cond">23 °C, 72 h</td></tr><tr><th scope="row">90° peel, PC / glass / Al / acrylic</th><td>7.8 / 9.9 / 7 / 7 N/cm</td><td class="cond">23 °C, 72 h</td></tr><tr><th scope="row">90° peel, ABS / PVC</th><td>2.4 / 4.4 N/cm</td><td class="cond">23 °C — HSE-oriented, low on LSE</td></tr><tr><th scope="row">Static shear</th><td>1,000 g, SUS 23 &amp; 70 °C both 10,000 min</td><td class="cond">ASTM D3654</td></tr><tr><th scope="row">Temp. resistance</th><td>Long 149 °C · Short 204 °C</td><td class="cond"></td></tr></tbody></table></div>
+      <ul class="feat"><li>Outstanding shear on metal &amp; high-surface-energy (HSE) plastics — resists slippage &amp; edge lifting</li><li>Temporarily repositionable after application (placement accuracy); double liner for dimensional stability</li><li>200MP — the industry standard for nameplate / graphic-overlay attachment; UL 969</li><li>Low on ABS/PVC etc. — for LSE use the 300LSE family. TDS carries the 3M industrial automotive disclaimer</li></ul>
+    </section>
+    <section class="blk blk-apps"><h4>Key applications</h4><ul class="apps"><li>Metal nameplate / rating-plate attachment</li><li>Graphic overlays / membrane switches</li><li>Subsurface-printed PC/PET graphic attachment</li><li>Rotary die-cut industrial foam gaskets</li></ul></section>
+    <footer class="blk blk-src"><h4>Sources (TDS)</h4><ul><li><a href="https://multimedia.3m.com/mws/media/2366048O/3M-Adhesive-Transfer-Tape-7952MP.pdf?pif=000032" target="_blank" rel="noopener">3M Technical Data Sheet 7952MP (2024-09)</a></li><li><a href="https://www.3m.co.kr/3M/ko_KR/p/d/b40065948/" target="_blank" rel="noopener">3M Korea product page 7952MP</a></li></ul></footer>
+  </div>
+</article>
+</div>
+<div class="cat-group" data-cat="foam">
+  <h2 class="cat-title" id="cat-foam">Foam double-sided <span class="cnt">3</span></h2>
+  <p class="cat-desc">Foam carrier. Gap-filling, stress relaxation, waterproof/sealing. Acrylic foam (exterior structural), PE foam (mounting), thin PO foam (waterproof).</p>
+  
+<article class="entry" id="p-3m-4229p" data-brand="3M" data-cat="foam" data-kw="3m 4229p 3m™ acrylic foam tape 4229p acrylic foam for exterior trim — ar-7 to clearcoat, ds-4 to the part foam foam double-sided differential (two-side) adhesive acrylic foam body-side &amp; rocker moldings (sus, abs, pvc) wheel-lip &amp; door-edge moldings b-pillar appliqué, dash overlays nameplates / ornamentation, luggage-rack slats, wind/rain deflectors">
+  <header class="entry-head">
+    <div class="entry-id"><span class="brand b-3m">3M</span><h3>4229P</h3><span class="thick">0.76 mm</span></div>
+    <p class="fullname">3M™ Acrylic Foam Tape 4229P</p>
+    <p class="tagline">Acrylic foam for exterior trim — AR-7 to clearcoat, DS-4 to the part</p>
+    <div class="tags"><span class="tag tag-cat">Foam double-sided</span><span class="tag">Differential (two-side) adhesive</span><span class="tag">Acrylic foam</span></div>
+  </header>
+  <div class="entry-body">
+    <figure class="cs-wrap"><svg class="cs" viewBox="0 0 368 147.8" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="17.0" fill="#F1B9B1" rx="1.5"/><text x="138" y="19.7" class="cs-label">Red PE liner (logo)</text><line x1="130" y1="16.5" x2="135" y2="16.5" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="27.0" width="120" height="20.4" fill="#EBB84A" rx="1.5"/><text x="138" y="40.4" class="cs-label">AR-7 acrylic (liner side · paint)</text><line x1="130" y1="37.2" x2="135" y2="37.2" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="49.4" width="120" height="68.0" fill="#5C6268" rx="1.5"/><rect x="8" y="49.4" width="120" height="68.0" fill="url(#p-cells_l)" rx="1.5"/><text x="138" y="86.6" class="cs-label">Acrylic foam 0.76 (dark gray)</text><line x1="130" y1="83.4" x2="135" y2="83.4" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="119.4" width="120" height="20.4" fill="#EBB84A" rx="1.5"/><text x="138" y="132.8" class="cs-label">DS-4 acrylic (non-liner · part)</text><line x1="130" y1="129.6" x2="135" y2="129.6" stroke="#9AA79E" stroke-width="0.8"/></svg><figcaption>Cross-section (not to scale)</figcaption></figure>
+    <section class="blk blk-spec"><h4>Construction &amp; properties</h4><dl><div class="kv"><dt>Adhesive</dt><dd>Liner side AR-7 / non-liner side DS-4 high-performance acrylic</dd></div><div class="kv"><dt>Carrier</dt><dd>Medium-density dark-gray acrylic foam, density 688 kg/m³ (608–768)</dd></div><div class="kv"><dt>Thickness</dt><dd>0.76 mm (0.68–0.84)</dd></div><div class="kv"><dt>Liner</dt><dd>Red PE, logo print</dd></div><div class="kv"><dt>Min. width</dt><dd>4 mm</dd></div><div class="kv"><dt>Shelf life</dt><dd>1 year from receipt</dd></div></dl></section>
+    <section class="blk blk-perf"><h4>Performance</h4>
+      <div class="tbl-scroll"><table class="perf"><thead><tr><th>Attribute</th><th>Value</th><th>Condition</th></tr></thead><tbody><tr><th scope="row">Breakaway / Continuing peel</th><td>8.6 kg / 4.1 kg</td><td class="cond">12.7 mm width, PVC bar, base/clearcoat, 72 h, 305 mm/min</td></tr><tr><th scope="row">Static shear</th><td>exceeds 100 h at 70 °C</td><td class="cond">12.7×50.8 mm, 250 g</td></tr><tr><th scope="row">Quality system</th><td>QS 9000 (File A1021)</td><td class="cond">per TDS</td></tr></tbody></table></div>
+      <ul class="feat"><li>Viscoelastic foam elongates &amp; relaxes under load → minimizes bond-line stress</li><li>Excellent plasticizer resistance, high internal strength &amp; conformability</li><li>Liner side: high initial/final adhesion to clearcoat &amp; mar-resistant paint; non-liner side for trim materials</li><li>Many plastics need a 3M adhesion promoter</li></ul>
+    </section>
+    <section class="blk blk-apps"><h4>Key applications</h4><ul class="apps"><li>Body-side &amp; rocker moldings (SUS, ABS, PVC)</li><li>Wheel-lip &amp; door-edge moldings</li><li>B-pillar appliqué, dash overlays</li><li>Nameplates / ornamentation, luggage-rack slats, wind/rain deflectors</li></ul></section>
+    <footer class="blk blk-src"><h4>Sources (TDS)</h4><ul><li><a href="https://multimedia.3m.com/mws/media/1081277O/4229p.pdf" target="_blank" rel="noopener">3M Data Sheet 4229P (2004-09)</a></li></ul></footer>
+  </div>
+</article>
+<article class="entry" id="p-tesa-62510" data-brand="tesa" data-cat="foam" data-kw="tesa 62510 tesa® 62510 1 mm pe foam carrier — outdoor-suitable mounting for trims, profiles, frames foam foam double-sided pe foam outdoor suitable general mounting trim &amp; profile mounting solar-module frames">
+  <header class="entry-head">
+    <div class="entry-id"><span class="brand b-tesa">tesa</span><h3>62510</h3><span class="thick">1.0 mm</span></div>
+    <p class="fullname">tesa® 62510</p>
+    <p class="tagline">1 mm PE foam carrier — outdoor-suitable mounting for trims, profiles, frames</p>
+    <div class="tags"><span class="tag tag-cat">Foam double-sided</span><span class="tag">PE foam</span><span class="tag">Outdoor suitable</span></div>
+  </header>
+  <div class="entry-body">
+    <figure class="cs-wrap"><svg class="cs" viewBox="0 0 368 147.8" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="17.0" fill="#E6DAC0" rx="1.5"/><rect x="8" y="8" width="120" height="17.0" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="19.7" class="cs-label">Glassine liner 71 µm (PV0)</text><line x1="130" y1="16.5" x2="135" y2="16.5" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="27.0" width="120" height="20.4" fill="#EBB84A" rx="1.5"/><text x="138" y="40.4" class="cs-label">Tackified acrylic</text><line x1="130" y1="37.2" x2="135" y2="37.2" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="49.4" width="120" height="68.0" fill="#EDF0F2" rx="1.5"/><rect x="8" y="49.4" width="120" height="68.0" fill="url(#p-cells_d)" rx="1.5"/><text x="138" y="86.6" class="cs-label">PE foam 1,000 µm (black/white)</text><line x1="130" y1="83.4" x2="135" y2="83.4" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="119.4" width="120" height="20.4" fill="#EBB84A" rx="1.5"/><text x="138" y="132.8" class="cs-label">Tackified acrylic</text><line x1="130" y1="129.6" x2="135" y2="129.6" stroke="#9AA79E" stroke-width="0.8"/></svg><figcaption>Cross-section (not to scale)</figcaption></figure>
+    <section class="blk blk-spec"><h4>Construction &amp; properties</h4><dl><div class="kv"><dt>Adhesive</dt><dd>Tackified acrylic</dd></div><div class="kv"><dt>Carrier</dt><dd>PE foam (conformable, high inner strength)</dd></div><div class="kv"><dt>Total thickness</dt><dd>1,000 µm</dd></div><div class="kv"><dt>Liner</dt><dd>Brown glassine 71 µm (PV0) · clear PET 50 µm (PV13) · blue PE 100 µm (PV15)</dd></div><div class="kv"><dt>Color</dt><dd>Black / white</dd></div></dl></section>
+    <section class="blk blk-perf"><h4>Performance</h4>
+      <div class="tbl-scroll"><table class="perf"><thead><tr><th>Attribute</th><th>Value</th><th>Condition</th></tr></thead><tbody><tr><th scope="row">Adhesion, steel</th><td>13.5 N/cm (initial &amp; 14 d, foam split)</td><td class="cond">tesa method</td></tr><tr><th scope="row">Adhesion, ABS / Al / PC / PET</th><td>8 → 13.5 · 8 → 13.5 · 8 → 13.5 · 6 → 13.5 N/cm</td><td class="cond">initial → 14 d</td></tr><tr><th scope="row">Adhesion, PVC / PS / PP / PE</th><td>13.5 · 8 · 1.2 · 0.9 N/cm</td><td class="cond"></td></tr><tr><th scope="row">Tensile strength</th><td>10 N/cm, elongation 180 %</td><td class="cond"></td></tr><tr><th scope="row">Temp. resistance</th><td>Long &amp; short 80 °C (tesa static-load method) · TÜV 85 °C confirmed</td><td class="cond"></td></tr><tr><th scope="row">Static shear</th><td>70 °C very good · 23/40 °C good</td><td class="cond"></td></tr></tbody></table></div>
+      <ul class="feat"><li>Outdoor-suitable — UV / water / aging resistance very good</li><li>Automatic &amp; manual module assembly; high foam compression rate</li><li>UL-recognized PV polymeric material (QIHE2), TÜV Rheinland confirmed long-term adhesion after IEC 61215 climate tests</li><li>Weak on PP/PE (LSE) — not suitable for olefin trim</li></ul>
+    </section>
+    <section class="blk blk-apps"><h4>Key applications</h4><ul class="apps"><li>General mounting</li><li>Trim &amp; profile mounting</li><li>Solar-module frames</li></ul></section>
+    <footer class="blk blk-src"><h4>Sources (TDS)</h4><ul><li><a href="https://www.tesa.com/en-gb/files/download/11242100,6,medium-11242100.pdf" target="_blank" rel="noopener">tesa Product Information 62510 (en-GB)</a></li><li><a href="https://www.tesa.com/en-gb/industry/tesa-62510.html" target="_blank" rel="noopener">tesa product page 62510 (updated 2026-06-18)</a></li></ul></footer>
+  </div>
+</article>
+<article class="entry" id="p-nitto-no57115b-57115sb" data-brand="Nitto" data-cat="foam" data-kw="nitto no.57115b / 57115sb nitto no.57115b · no.57115sb 0.15 mm black polyolefin-foam waterproof double-sided — ipx7; sb for narrow frames foam foam double-sided waterproof ipx7 halogen-free mobile-phone display panel / electronic-part fixing fixing for waterproofing (display, sensor, lamp applications) nameplate fixing">
+  <header class="entry-head">
+    <div class="entry-id"><span class="brand b-nitto">Nitto</span><h3>No.57115B / 57115SB</h3><span class="thick">0.15 mm</span></div>
+    <p class="fullname">Nitto No.57115B · No.57115SB</p>
+    <p class="tagline">0.15 mm black polyolefin-foam waterproof double-sided — IPX7; SB for narrow frames</p>
+    <div class="tags"><span class="tag tag-cat">Foam double-sided</span><span class="tag">Waterproof IPX7</span><span class="tag">Halogen-free</span></div>
+  </header>
+  <div class="entry-body">
+    <figure class="cs-wrap"><svg class="cs" viewBox="0 0 368 120.6" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="20.4" fill="#E6DAC0" rx="1.5"/><rect x="8" y="8" width="120" height="20.4" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="21.4" class="cs-label">Release liner</text><line x1="130" y1="18.2" x2="135" y2="18.2" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="30.4" width="120" height="20.4" fill="#EBB84A" rx="1.5"/><text x="138" y="43.8" class="cs-label">Acrylic</text><line x1="130" y1="40.6" x2="135" y2="40.6" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="52.8" width="120" height="37.4" fill="#2B2F33" rx="1.5"/><rect x="8" y="52.8" width="120" height="37.4" fill="url(#p-cells_l)" rx="1.5"/><text x="138" y="74.7" class="cs-label">Special polyolefin foam 0.15 (black) — SB is reinforced</text><line x1="130" y1="71.5" x2="135" y2="71.5" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="92.19999999999999" width="120" height="20.4" fill="#EBB84A" rx="1.5"/><text x="138" y="105.6" class="cs-label">Acrylic</text><line x1="130" y1="102.4" x2="135" y2="102.4" stroke="#9AA79E" stroke-width="0.8"/></svg><figcaption>Cross-section (not to scale)</figcaption></figure>
+    <section class="blk blk-spec"><h4>Construction &amp; properties</h4><dl><div class="kv"><dt>Adhesive</dt><dd>Acrylic</dd></div><div class="kv"><dt>Carrier</dt><dd>Special polyolefin foam (black) — SB is a strong (reinforced) foam</dd></div><div class="kv"><dt>Thickness</dt><dd>0.15 mm (w/o liner)</dd></div><div class="kv"><dt>Series</dt><dd>57120 / 57125 / 57130 (0.20 / 0.25 / 0.30 mm), each in B and SB</dd></div><div class="kv"><dt>Core</dt><dd>SB series uses a plastic core</dd></div></dl></section>
+    <section class="blk blk-perf"><h4>Performance</h4>
+      <div class="tbl-scroll"><table class="perf"><thead><tr><th>Attribute</th><th>Value</th><th>Condition</th></tr></thead><tbody><tr><th scope="row">180° peel, SUS</th><td>57115B 17.0 · 57115SB 19.0 N/20mm</td><td class="cond">300 mm/min, PET#25 backing, 23 °C</td></tr><tr><th scope="row">Push-out (PC plate)</th><td>B 32.1 · SB 41.2 N/cm²</td><td class="cond">90°, 10 mm/min</td></tr><tr><th scope="row">Waterproofness</th><td>IPX7 equivalent</td><td class="cond">40×60 mm, 1 mm frame, 1 m depth 30 min</td></tr></tbody></table></div>
+      <ul class="feat"><li>Flexible thin foam — conforms to undulations, waterproof</li><li>Strong adhesion to metal &amp; plastic, good on PP and other plastics</li><li>SB stays effective even on small bond areas such as narrow frames</li><li>Halogen-free, free of 10 RoHS substances</li></ul>
+    </section>
+    <section class="blk blk-apps"><h4>Key applications</h4><ul class="apps"><li>Mobile-phone display panel / electronic-part fixing</li><li>Fixing for waterproofing (display, sensor, lamp applications)</li><li>Nameplate fixing</li></ul></section>
+    <footer class="blk blk-src"><h4>Sources (TDS)</h4><ul><li><a href="https://www.nitto.com/us/en/others/faq/products/documents/file/Double_Sided_Tape_en.pdf" target="_blank" rel="noopener">Nitto Double-Coated Adhesive Tapes catalog (2023-07)</a></li></ul></footer>
+  </div>
+</article>
+</div>
+<div class="cat-group" data-cat="single">
+  <h2 class="cat-title" id="cat-single">Single-sided specialty <span class="cnt">2</span></h2>
+  <p class="cat-desc">Adhesive on one side only. Harness bundling (fleece), sealing gaskets (EPDM foam) and other functional tapes.</p>
+  
+<article class="entry" id="p-tesa-61102" data-brand="tesa" data-cat="single" data-kw="tesa 61102 tesa® 61102 (6110 series) single-sided epdm closed-cell foam 3.2 mm — sealing / gasketing, fmvss 302 flame retardant single single-sided specialty single-sided fmvss 302 verify regional lineup electrical enclosure &amp; switch-cabinet sealing exterior / interior lighting sealing industrial doors &amp; hatches, boat hatches glazing systems, outdoor-mounted a/c equipment">
+  <header class="entry-head">
+    <div class="entry-id"><span class="brand b-tesa">tesa</span><h3>61102</h3><span class="thick">3.2 mm</span></div>
+    <p class="fullname">tesa® 61102 (6110 series)</p>
+    <p class="tagline">Single-sided EPDM closed-cell foam 3.2 mm — sealing / gasketing, FMVSS 302 flame retardant</p>
+    <div class="tags"><span class="tag tag-cat">Single-sided specialty</span><span class="tag">Single-sided</span><span class="tag">FMVSS 302</span><span class="tag">Verify regional lineup</span></div>
+  </header>
+  <div class="entry-body">
+    <figure class="cs-wrap"><svg class="cs" viewBox="0 0 368 132.2" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="74.8" fill="#1F2224" rx="1.5"/><rect x="8" y="8" width="120" height="74.8" fill="url(#p-cells_l)" rx="1.5"/><text x="138" y="48.6" class="cs-label">EPDM closed-cell foam 3.2 mm (black)</text><line x1="130" y1="45.4" x2="135" y2="45.4" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="84.8" width="120" height="20.4" fill="#EBB84A" rx="1.5"/><text x="138" y="98.2" class="cs-label">Acrylic adhesive (single side)</text><line x1="130" y1="95.0" x2="135" y2="95.0" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="107.19999999999999" width="120" height="17.0" fill="#E6DAC0" rx="1.5"/><rect x="8" y="107.19999999999999" width="120" height="17.0" fill="url(#p-hatch)" rx="1.5"/><text x="138" y="118.9" class="cs-label">Liner</text><line x1="130" y1="115.7" x2="135" y2="115.7" stroke="#9AA79E" stroke-width="0.8"/></svg><figcaption>Cross-section (not to scale)</figcaption></figure>
+    <section class="blk blk-spec"><h4>Construction &amp; properties</h4><dl><div class="kv"><dt>Adhesive</dt><dd>Acrylic (one side only)</dd></div><div class="kv"><dt>Carrier</dt><dd>EPDM closed-cell foam, black</dd></div><div class="kv"><dt>Thickness</dt><dd>3.2 mm</dd></div><div class="kv"><dt>Series</dt><dd>61101 (1.6) · 61103 (4.8) · 61104 (6.4) · 61105 (9.5) · 61106 (12.7) · 61107 (19 mm)</dd></div></dl></section>
+    <section class="blk blk-perf"><h4>Performance</h4>
+      <div class="tbl-scroll"><table class="perf"><thead><tr><th>Attribute</th><th>Value</th><th>Condition</th></tr></thead><tbody><tr><th scope="row">Service temperature</th><td>−40 to 105 °C</td><td class="cond"></td></tr><tr><th scope="row">Weathering</th><td>UV / ozone / weather resistant — outdoor suitable</td><td class="cond"></td></tr><tr><th scope="row">Flame retardancy</th><td>FMVSS 302</td><td class="cond"></td></tr><tr><th scope="row">Food / drinking water</th><td>FDA 21 CFR 177.2600 (non-toxic)</td><td class="cond"></td></tr></tbody></table></div>
+      <ul class="feat"><li>Non-staining, non-corrosive, electrically non-conductive foam; plastic-compatible</li><li>tesa states: complies with automotive-industry standards</li><li>Lineup centered on tesa AU/IN sites (Durafoam) — verify availability per APAC country</li></ul>
+    </section>
+    <section class="blk blk-apps"><h4>Key applications</h4><ul class="apps"><li>Electrical enclosure &amp; switch-cabinet sealing</li><li>Exterior / interior lighting sealing</li><li>Industrial doors &amp; hatches, boat hatches</li><li>Glazing systems, outdoor-mounted A/C equipment</li></ul></section>
+    <footer class="blk blk-src"><h4>Sources (TDS)</h4><ul><li><a href="https://www.tesa.com/en-in/industry/tesa-61102.html" target="_blank" rel="noopener">tesa product page 61102 (en-in)</a></li></ul></footer>
+  </div>
+</article>
+<article class="entry" id="p-tesa-51608" data-brand="tesa" data-cat="single" data-kw="tesa 51608 tesa® 51608 cabin pet-fleece harness tape — noise damping, abrasion resistance, hand-tearable single single-sided specialty single-sided lv312 classes passenger-compartment (cabin) wire-harness bundling harness sections needing flexibility &amp; noise damping">
+  <header class="entry-head">
+    <div class="entry-id"><span class="brand b-tesa">tesa</span><h3>51608</h3><span class="thick">—</span></div>
+    <p class="fullname">tesa® 51608</p>
+    <p class="tagline">Cabin PET-fleece harness tape — noise damping, abrasion resistance, hand-tearable</p>
+    <div class="tags"><span class="tag tag-cat">Single-sided specialty</span><span class="tag">Single-sided</span><span class="tag">LV312 classes</span></div>
+  </header>
+  <div class="entry-body">
+    <figure class="cs-wrap"><svg class="cs" viewBox="0 0 368 69.0" role="img" aria-label="Cross-section"><rect x="8" y="8" width="120" height="30.599999999999998" fill="#3B4045" rx="1.5"/><rect x="8" y="8" width="120" height="30.599999999999998" fill="url(#p-fiber_l)" rx="1.5"/><text x="138" y="26.5" class="cs-label">PET fleece (black)</text><line x1="130" y1="23.3" x2="135" y2="23.3" stroke="#9AA79E" stroke-width="0.8"/><rect x="8" y="40.599999999999994" width="120" height="20.4" fill="#D9903E" rx="1.5"/><text x="138" y="54.0" class="cs-label">Rubber-based adhesive</text><line x1="130" y1="50.8" x2="135" y2="50.8" stroke="#9AA79E" stroke-width="0.8"/></svg><figcaption>Cross-section (not to scale)</figcaption></figure>
+    <section class="blk blk-spec"><h4>Construction &amp; properties</h4><dl><div class="kv"><dt>Adhesive</dt><dd>Rubber-based (optimized for manual application)</dd></div><div class="kv"><dt>Carrier</dt><dd>PET fleece</dd></div><div class="kv"><dt>Color</dt><dd>Black</dd></div><div class="kv"><dt>Sizes</dt><dd>width 9 / 19 / 25 / 32 mm × 25 m, core 38 mm</dd></div><div class="kv"><dt>Storage</dt><dd>up to 12 months from dispatch</dd></div></dl></section>
+    <section class="blk blk-perf"><h4>Performance</h4>
+      <div class="tbl-scroll"><table class="perf"><thead><tr><th>Attribute</th><th>Value</th><th>Condition</th></tr></thead><tbody><tr><th scope="row">Tensile strength</th><td>40 N/cm, elongation 20 %</td><td class="cond"></td></tr><tr><th scope="row">Adhesion, steel</th><td>3 N/cm</td><td class="cond"></td></tr><tr><th scope="row">Service temperature</th><td>−40 to 105 °C</td><td class="cond"></td></tr><tr><th scope="row">Abrasion resistance</th><td>Class B (10 mm mandrel) · Class A (5 mm)</td><td class="cond">LV312</td></tr><tr><th scope="row">Noise damping</th><td>Class C</td><td class="cond">LV312</td></tr><tr><th scope="row">Unwind force</th><td>9 N/roll</td><td class="cond">30 m/min</td></tr></tbody></table></div>
+      <ul class="feat"><li>Hand-tearable, flexible &amp; smooth — for manual assembly-line use</li><li>Tear-resistant, stable unwind force, age-resistant</li><li>Combines bundling strength, noise damping and abrasion resistance while keeping harnesses flexible</li></ul>
+    </section>
+    <section class="blk blk-apps"><h4>Key applications</h4><ul class="apps"><li>Passenger-compartment (cabin) wire-harness bundling</li><li>Harness sections needing flexibility &amp; noise damping</li></ul></section>
+    <footer class="blk blk-src"><h4>Sources (TDS)</h4><ul><li><a href="https://www.tesa.com/en/files/download/11764432,0,medium-11764432.pdf" target="_blank" rel="noopener">tesa Product Information 51608 (2024-06-12)</a></li></ul></footer>
+  </div>
+</article>
+</div>
+</div></section>
+
+<section class="sec" id="compare"><div class="wrap">
+  <h2>At a glance</h2>
+  <p class="lead">Steel/SUS peel uses different test methods per brand, so the 'normalized N/cm' column is only a rough sense of scale. 3M uses ASTM/FINAT at 72 h, tesa its own method at initial &amp; 14 days, Nitto measures after 30 min with a PET#25 backing.</p>
+  <div class="tbl-scroll"><table class="cmp">
+<thead><tr><th>Product</th><th>Category</th><th>Thick. mm</th><th>Steel/SUS peel (raw · cond.)</th><th>Norm. N/cm</th><th>PP adhesion</th><th>Temp. long / short °C</th><th>Standards · statements</th></tr></thead>
+<tbody><tr><td>3M 9448A</td><td>Nonwoven</td><td>0.15</td><td>26.2 N/25mm (180°, 72 h)</td><td>10.5</td><td>13.2 N/25mm</td><td>90 / 150</td><td>—</td></tr><tr><td>3M 9080HL</td><td>Nonwoven</td><td>0.16</td><td>7.5 N/10mm (180°, 72 h)</td><td>7.5</td><td>— (strong on PE/PP/PVC)</td><td>— / &gt;170 (hot splice)</td><td>—</td></tr><tr><td>tesa 4959</td><td>Nonwoven</td><td>0.10</td><td>8 → 8.5 N/cm (initial→14 d)</td><td>8.0 → 8.5</td><td>5.5 → 6.5 N/cm</td><td>80 / 200</td><td>VDA 278 stmt, ISO 10993</td></tr><tr><td>tesa 8854</td><td>Nonwoven</td><td>0.10</td><td>8.1 → 9.4 N/cm</td><td>8.1 → 9.4</td><td>— (PE 3.4 N/cm)</td><td>80 / 260</td><td>VDA not stated</td></tr><tr><td>Nitto No.500</td><td>Nonwoven</td><td>0.17</td><td>12.5 N/20mm (180°, 30 min)</td><td>6.3</td><td>—</td><td>0–80 °C adhesion data</td><td>UL 969</td></tr><tr><td>Nitto No.501L</td><td>Nonwoven</td><td>0.16</td><td>10.0 N/20mm</td><td>5.0</td><td>— (rough/low-temp)</td><td>—</td><td>RoHS</td></tr><tr><td>Nitto No.5000NS</td><td>Nonwoven</td><td>0.16</td><td>16.0 N/20mm (180°, 30 min)</td><td>8.0</td><td>14.5 N/20mm</td><td>80 °C 30-d aging data</td><td>UL MH13557</td></tr><tr><td>3M 9495MP</td><td>PET film</td><td>0.14</td><td>10.9 N/cm (180°, 72 h)</td><td>10.9</td><td>not recommended</td><td>121 / 149</td><td>RoHS·REACH</td></tr><tr><td>3M 93010LE</td><td>PET film</td><td>0.10</td><td>12.0 N/cm (180°, 72 h)</td><td>12.0</td><td>12.0 N/cm (high on LSE)</td><td>121 / 149</td><td>UL 746C</td></tr><tr><td>tesa 4965</td><td>PET film</td><td>0.205</td><td>11.5 → 11.8 N/cm</td><td>11.5 → 11.8</td><td>6.8 → 7.9 N/cm</td><td>100 / 200</td><td>VDA 278 stmt, UL 969, EN 45545-2</td></tr><tr><td>tesa 51970</td><td>PP film</td><td>0.22</td><td>13 → 13.5 N/cm</td><td>13 → 13.5</td><td>8.5 → 10 N/cm</td><td>80 / 130</td><td>VDA 278 stmt</td></tr><tr><td>3M 6035PC+</td><td>Transfer</td><td>0.127</td><td>13 N/cm (180°, 72 h)</td><td>13.0</td><td>5 N/cm (90°)</td><td>— (interior env.)</td><td>OEM fog spec</td></tr><tr><td>3M 7952MP</td><td>Transfer</td><td>0.06</td><td>9.6 N/cm (180°, 72 h)</td><td>9.6</td><td>— (LSE not rec.)</td><td>149 / 204</td><td>UL 969</td></tr><tr><td>3M 4229P</td><td>Acrylic foam</td><td>0.76</td><td>8.6 kg breakaway / 12.7 mm</td><td>n/a</td><td>promoter needed</td><td>70 °C 100 h shear</td><td>QS 9000</td></tr><tr><td>tesa 62510</td><td>PE foam</td><td>1.0</td><td>13.5 N/cm (foam split)</td><td>13.5</td><td>1.2 N/cm</td><td>80 / 80</td><td>UL QIHE2, IEC 61215</td></tr><tr><td>Nitto 57115B / SB</td><td>PO foam</td><td>0.15</td><td>17.0 / 19.0 N/20mm</td><td>8.5 / 9.5</td><td>— (strong on PP)</td><td>—</td><td>IPX7, halogen-free</td></tr><tr><td>tesa 61102</td><td>Single EPDM foam</td><td>3.2</td><td>—</td><td>—</td><td>—</td><td>−40 to 105</td><td>FMVSS 302, FDA</td></tr><tr><td>tesa 51608</td><td>Single PET fleece</td><td>—</td><td>3 N/cm</td><td>3.0</td><td>—</td><td>−40 to 105</td><td>LV312</td></tr></tbody></table></div>
+  <p class="note">Unit conversion: N/25mm &divide; 2.5 = N/cm · N/20mm &divide; 2 = N/cm · N/10mm = N/cm · oz/in &times; 0.109 = N/cm. Acrylic foam (4229P) is a kg-unit foam-split test and was not converted. Use for relative comparison within a brand rather than absolute comparison across brands.</p>
+</div></section>
+
+<section class="sec" id="pending"><div class="wrap">
+  <h2>Part-number notes</h2>
+  <p class="lead">The four codes on the original list (9301LE · 7905NP · 8811 · 8484) were resolved as below. No unresolved part numbers remain.</p>
+  <div class="tbl-scroll"><table class="src"><thead><tr><th>As listed</th><th>Resolved</th><th>Note</th></tr></thead><tbody><tr><td>3M 9301LE</td><td>→ 93010LE</td><td>Confirmed as 3M 93010LE — added to the Film double-sided section.</td></tr><tr><td>3M 7905NP</td><td>→ 7952MP</td><td>Confirmed as 3M 7952MP — same as the 7952MP already in the Transfer section (duplicate).</td></tr><tr><td>3M 8811</td><td>Excluded</td><td>An anti-static table mat part number; excluded from this training set.</td></tr><tr><td>tesa 8484</td><td>→ 8854</td><td>Confirmed as tesa 8854 — added to the Nonwoven double-sided section.</td></tr></tbody></table></div>
+</div></section>
+
+<section class="sec" id="sources"><div class="wrap">
+  <h2>Sources · test methods</h2>
+  <p class="lead">The values on each product card are transcribed from the documents below. Links are current as of 2026-09-08; the latest manufacturer revision takes precedence.</p>
+  <div class="tbl-scroll"><table class="src"><thead><tr><th>Product</th><th>Document · issue/rev · link</th></tr></thead><tbody><tr><td>3M 9448A</td><td><a href="https://multimedia.3m.com/mws/media/1903466O/3m-double-coated-tape-9448a-data-sheet-seer-eer-english.pdf" target="_blank" rel="noopener">3M Product Information 9448A (2022-09, EMEA)</a></td></tr><tr><td>3M 9448A</td><td><a href="https://multimedia.3m.com/mws/media/900994O/3m-tm-double-coated-tissue-tape-9448a.pdf" target="_blank" rel="noopener">3M Technical Data 9448A/9448AB (2009-01, US)</a></td></tr><tr><td>3M 6035PC+</td><td><a href="https://multimedia.3m.com/mws/media/2366096O/3M-Adhesive-Transfer-Tape-6035PC.pdf?pif=000267" target="_blank" rel="noopener">3M Technical Data Sheet 6035PC (2024-09)</a></td></tr><tr><td>3M 9080HL</td><td><a href="https://multimedia.3m.com/mws/media/83148O/9080hl-double-coated-splicing-tape.pdf" target="_blank" rel="noopener">3M Temporary Product Data Sheet 9080HL (2000-05, UK) — provisional, verify latest revision</a></td></tr><tr><td>3M 4229P</td><td><a href="https://multimedia.3m.com/mws/media/1081277O/4229p.pdf" target="_blank" rel="noopener">3M Data Sheet 4229P (2004-09)</a></td></tr><tr><td>3M 9495MP</td><td><a href="https://multimedia.3m.com/mws/media/771684O/3m-tm-double-coated-tapes-9492mp-9495mp-9495mpf-9495b.pdf" target="_blank" rel="noopener">3M Technical Data 9492MP·9495MP·9495MPF·9495B (2011-11)</a></td></tr><tr><td>3M 93010LE</td><td><a href="https://multimedia.3m.com/mws/media/1566788O/iatd-high-strength-double-coated-tape-tech-data-sheet.pdf" target="_blank" rel="noopener">3M Technical Data 93010LE·93015LE·93020LE (2017-11)</a></td></tr><tr><td>3M 93010LE</td><td><a href="https://www.3m.co.kr/3M/ko_KR/p/d/b40070398/" target="_blank" rel="noopener">3M Korea product page 93010LE</a></td></tr><tr><td>3M 7952MP</td><td><a href="https://multimedia.3m.com/mws/media/2366048O/3M-Adhesive-Transfer-Tape-7952MP.pdf?pif=000032" target="_blank" rel="noopener">3M Technical Data Sheet 7952MP (2024-09)</a></td></tr><tr><td>3M 7952MP</td><td><a href="https://www.3m.co.kr/3M/ko_KR/p/d/b40065948/" target="_blank" rel="noopener">3M Korea product page 7952MP</a></td></tr><tr><td>tesa 4959</td><td><a href="https://www.tesa.com/en-us/files/download/11527148,2,medium-11527148.pdf" target="_blank" rel="noopener">tesa Product Information 4959 (2024-02-28)</a></td></tr><tr><td>tesa 8854</td><td><a href="https://www.tesa.com/en/files/download/11187487,5,medium-11187487.pdf" target="_blank" rel="noopener">tesa Product Information 8854 (2024-12-04)</a></td></tr><tr><td>tesa 4965 Original</td><td><a href="https://www.tesa.com/en-us/files/download/11527157,4,medium-11527157.pdf" target="_blank" rel="noopener">tesa Product Information 4965 Original Next Gen (2025-02-12)</a></td></tr><tr><td>tesa 51970</td><td><a href="https://www.tesa.com/en/files/download/11187755,8,medium-11187755.pdf" target="_blank" rel="noopener">tesa Product Information 51970 (2025-10-25)</a></td></tr><tr><td>tesa 61102</td><td><a href="https://www.tesa.com/en-in/industry/tesa-61102.html" target="_blank" rel="noopener">tesa product page 61102 (en-in)</a></td></tr><tr><td>tesa 51608</td><td><a href="https://www.tesa.com/en/files/download/11764432,0,medium-11764432.pdf" target="_blank" rel="noopener">tesa Product Information 51608 (2024-06-12)</a></td></tr><tr><td>tesa 62510</td><td><a href="https://www.tesa.com/en-gb/files/download/11242100,6,medium-11242100.pdf" target="_blank" rel="noopener">tesa Product Information 62510 (en-GB)</a></td></tr><tr><td>tesa 62510</td><td><a href="https://www.tesa.com/en-gb/industry/tesa-62510.html" target="_blank" rel="noopener">tesa product page 62510 (updated 2026-06-18)</a></td></tr><tr><td>Nitto No.500</td><td><a href="https://www.nitto.com/us/en/others/faq/products/documents/file/Double_Sided_Tape_en.pdf" target="_blank" rel="noopener">Nitto Double-Coated Adhesive Tapes catalog (2023-07)</a></td></tr><tr><td>Nitto No.500</td><td><a href="https://www.nitto.com/us/en/others/products/file/datasheet/NJ_No.500_No500A_No500AB_EN.pdf" target="_blank" rel="noopener">Nitto TDS 10-P-0014 No.500 / 500A / 500AB</a></td></tr><tr><td>Nitto No.501L</td><td><a href="https://www.nitto.com/us/en/others/products/file/datasheet/NJ_No.501L_EN.pdf" target="_blank" rel="noopener">Nitto TDS 10-P-0015 No.501L</a></td></tr><tr><td>Nitto No.5000NS</td><td><a href="https://www.nitto.com/kr/ko/others/products/file/datasheet/NJ_No.5000NS_EN.pdf" target="_blank" rel="noopener">Nitto TDS 10-P-0012 No.5000NS (2026-08)</a></td></tr><tr><td>Nitto No.57115B / 57115SB</td><td><a href="https://www.nitto.com/us/en/others/faq/products/documents/file/Double_Sided_Tape_en.pdf" target="_blank" rel="noopener">Nitto Double-Coated Adhesive Tapes catalog (2023-07)</a></td></tr></tbody></table></div>
+  <div class="units">
+    <div><strong>3M</strong>ASTM D3330 (peel, 90&deg;/180&deg;) · ASTM D3654 (static shear) · ASTM D3652 (thickness). EMEA sheets use FINAT FTM1/FTM8. Generally measured after 72 h dwell.</div>
+    <div><strong>tesa</strong>tesa's own method, per-substrate values (steel, ABS, PC, PP, PE, etc.) at initial &rarr; 14 days. Heat resistance under static load; VDA 278 analysis compared against draft GB (China) &amp; Japan MHLW guidelines.</div>
+    <div><strong>Nitto</strong>180&deg; peel, 300 mm/min, PET#25 (0.025 mm) backing, 2 kg roller one pass, 23 &deg;C/50 %RH. Unit is N/20mm. Measured after 30 min by default, so tends to read lower than 3M / tesa.</div>
+  </div>
+</div></section>
+
+<footer class="site-foot"><div class="wrap">
+  <p>All values here are the manufacturers' typical values, not specifications. Verify the latest TDS and run your own testing before any application.</p>
+  <p>3M, tesa, Nitto and all part numbers are trademarks of their respective owners. Compiled 2026-09-08.</p>
+</div></footer>
+<script>
+(function(){
+  var state={brand:"all",cat:"all",q:""};
+  var entries=[].slice.call(document.querySelectorAll(".entry"));
+  var groups=[].slice.call(document.querySelectorAll(".cat-group"));
+  var countEl=document.getElementById("count");
+  function apply(){
+    var shown=0;
+    entries.forEach(function(e){
+      var ok=(state.brand==="all"||e.dataset.brand===state.brand)&&(state.cat==="all"||e.dataset.cat===state.cat)&&(state.q===""||e.dataset.kw.indexOf(state.q)>-1);
+      e.classList.toggle("is-hidden",!ok); if(ok)shown++;
+    });
+    groups.forEach(function(g){var any=g.querySelector(".entry:not(.is-hidden)");g.classList.toggle("is-hidden",!any);});
+    countEl.textContent="Showing "+shown+" / "+entries.length;
+  }
+  document.querySelectorAll("[data-filter]").forEach(function(btn){
+    btn.addEventListener("click",function(){
+      var key=btn.dataset.filter,val=btn.dataset.value;
+      state[key]=(state[key]===val)?"all":val;
+      document.querySelectorAll('[data-filter="'+key+'"]').forEach(function(b){b.setAttribute("aria-pressed",b.dataset.value===state[key]?"true":"false");});
+      apply();
+    });
+  });
+  var s=document.getElementById("q");
+  s.addEventListener("input",function(){state.q=s.value.trim().toLowerCase();apply();});
+  apply();
+})();
+</script>
+</body>
+</html>
